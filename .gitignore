@@ -72,6 +72,7 @@ bld/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
+Properties/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
