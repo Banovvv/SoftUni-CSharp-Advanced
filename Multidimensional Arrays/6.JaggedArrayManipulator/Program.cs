@@ -5,9 +5,9 @@ namespace _6.JaggedArrayManipulator
 {
     internal class Program
     {
-        // 93/100
         static void Main()
         {
+            #region Initialization
             int rows = int.Parse(Console.ReadLine());
 
             double[][] arrays = new double[rows][];
@@ -23,8 +23,10 @@ namespace _6.JaggedArrayManipulator
                     arrays[i][j] = colArgs[j];
                 }
             }
+            #endregion
 
             // Modify based on adjesent row length
+            #region Modification
             for (int i = 0; i < rows - 1; i++)
             {
                 if (arrays[i].Length == arrays[i + 1].Length)
@@ -48,6 +50,7 @@ namespace _6.JaggedArrayManipulator
                     }
                 }
             }
+            #endregion
 
             string command = Console.ReadLine();
 
@@ -61,20 +64,19 @@ namespace _6.JaggedArrayManipulator
                 int col = int.Parse(commandArgs[2]);
                 int value = int.Parse(commandArgs[3]);
 
-                if (row < 0 || row > rows || col < 0 || col > arrays[row].Length)
+                if (row < 0 || row >= rows || col < 0 || col >= arrays[row].Length)
                 {
-                    break;
+                    command = Console.ReadLine();
+                    continue;
                 }
-                else
+
+                if (action == "Add")
                 {
-                    if (action == "Add")
-                    {
-                        arrays[row][col] += value;
-                    }
-                    else if (action == "Subtract")
-                    {
-                        arrays[row][col] -= value;
-                    }
+                    arrays[row][col] += value;
+                }
+                else if (action == "Subtract")
+                {
+                    arrays[row][col] -= value;
                 }
 
                 command = Console.ReadLine();
