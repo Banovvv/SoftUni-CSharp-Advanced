@@ -19,18 +19,32 @@ namespace _5.SnakeMoves
 
             for (int row = 0; row < rows; row++)
             {
+                // --->
                 if (row % 2 == 0)
                 {
                     for (int col = 0; col < cols; col++)
                     {
-                        matrix[row, col] = snake[col];
+                        matrix[row, col] = snake[counter];
+                        counter++;
+
+                        if (counter == snake.Length)
+                        {
+                            counter = 0;
+                        }
                     }
                 }
+                // <---
                 else
                 {
-                    for (int col = 0; col < cols; col++)
+                    for (int col = cols - 1; col >= 0; col--)
                     {
-                        matrix[row, col] = snake[cols - col];
+                        matrix[row, col] = snake[counter];
+                        counter++;
+
+                        if (counter == snake.Length)
+                        {
+                            counter = 0;
+                        }
                     }
                 }
             }
