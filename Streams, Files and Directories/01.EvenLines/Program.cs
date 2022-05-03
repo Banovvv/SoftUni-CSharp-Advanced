@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace _01.EvenLines
 {
@@ -13,28 +11,51 @@ namespace _01.EvenLines
         {
             string inputFilePath = @"..\..\text.txt";
 
-            Console.WriteLine(ProcessLines(inputFilePath));
+            ProcessLines(inputFilePath);
         }
 
-        public static string ProcessLines(string inputFilePath)
+        public static void ProcessLines(string inputFilePath)
         {
             StreamReader sr = new StreamReader(inputFilePath);
-            string contents = sr.ReadToEnd();
 
-            string[] lines = contents.Split(new string[] { @"\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+            List<string> lines = new List<string>();
 
+            while (!sr.EndOfStream)
+            {
+                lines.Add(sr.ReadLine());
+            }
 
-
-            return sr.ReadToEnd();
+            for (int i = 0; i < lines.Count; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(ReverseWords(ReplaceSymbols(lines[i])));
+                }
+            }
         }
-        private static string ReverseWords(string replacedSymbols)
+        private static string ReverseWords(string line)
         {
-            throw new NotImplementedException();
+            string[] words = line.Split();
+            Array.Reverse(words);
+
+            return string.Join(" ", words);
         }
 
         private static string ReplaceSymbols(string line)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < line.Length; i++)
+            {
+                char currentChar = line[i];
+                if (!char.IsLetterOrDigit(currentChar) && !char.IsWhiteSpace(currentChar))
+                {
+                    currentChar = '@';
+                }
+                sb.Append(currentChar);
+            }
+
+            return sb.ToString();
         }
     }
 }
