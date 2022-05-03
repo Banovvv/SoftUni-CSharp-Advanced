@@ -16,20 +16,21 @@ namespace _01.EvenLines
 
         public static void ProcessLines(string inputFilePath)
         {
-            StreamReader sr = new StreamReader(inputFilePath);
-
-            List<string> lines = new List<string>();
-
-            while (!sr.EndOfStream)
+            using (StreamReader sr = new StreamReader(inputFilePath))
             {
-                lines.Add(sr.ReadLine());
-            }
+                List<string> lines = new List<string>();
 
-            for (int i = 0; i < lines.Count; i++)
-            {
-                if (i % 2 == 0)
+                while (!sr.EndOfStream)
                 {
-                    Console.WriteLine(ReverseWords(ReplaceSymbols(lines[i])));
+                    lines.Add(sr.ReadLine());
+                }
+
+                for (int i = 0; i < lines.Count; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        Console.WriteLine(ReverseWords(ReplaceSymbols(lines[i])));
+                    }
                 }
             }
         }
@@ -45,10 +46,13 @@ namespace _01.EvenLines
         {
             StringBuilder sb = new StringBuilder();
 
+            List<string> symbolsToReplace = new List<string>() { "-", ",", ".", "!", "?" };
+
             for (int i = 0; i < line.Length; i++)
             {
                 char currentChar = line[i];
-                if (!char.IsLetterOrDigit(currentChar) && !char.IsWhiteSpace(currentChar))
+
+                if (symbolsToReplace.Contains(currentChar.ToString()))
                 {
                     currentChar = '@';
                 }
