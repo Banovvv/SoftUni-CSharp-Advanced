@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _10.ThePartyReservationFilterModule
 {
@@ -17,7 +15,7 @@ namespace _10.ThePartyReservationFilterModule
             {
                 string command = Console.ReadLine();
 
-                if(command == "Print")
+                if (command == "Print")
                 {
                     break;
                 }
@@ -28,7 +26,7 @@ namespace _10.ThePartyReservationFilterModule
                 UpdateFilters(filters, action, commandArgs);
             }
 
-            foreach(var filter in filters)
+            foreach (var filter in filters)
             {
                 string[] filterArgs = filter.Split(';');
                 string filterAction = filterArgs[0];
@@ -36,7 +34,7 @@ namespace _10.ThePartyReservationFilterModule
 
                 if (filterAction == "Starts with")
                 {
-                    invitations = invitations.Where(x=> !x.StartsWith(filterParam)).ToList();
+                    invitations = invitations.Where(x => !x.StartsWith(filterParam)).ToList();
                 }
                 else if (filterAction == "Ends with")
                 {
