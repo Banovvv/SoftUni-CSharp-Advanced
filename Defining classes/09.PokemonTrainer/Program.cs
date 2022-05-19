@@ -86,6 +86,7 @@ namespace _09.PokemonTrainer
 
             RemoveDeadPokemons(trainer);
         }
+
         static void RemoveDeadPokemons(Trainer trainer) => trainer.Pokemons = trainer.Pokemons.Where(x => x.Health > 0).ToList();
     }
 }
