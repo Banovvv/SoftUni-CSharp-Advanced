@@ -6,8 +6,16 @@ namespace _01.GenericBoxOfString
     {
         static void Main(string[] args)
         {
-            Box<string> box = new Box<string>("TEST");
-            Console.WriteLine(box);
+            int numberOfLines = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < numberOfLines; i++)
+            {
+                string value = Console.ReadLine();
+
+                var box = new Box<string>(value);
+
+                Console.WriteLine(box);
+            }
         }
     }
 }
