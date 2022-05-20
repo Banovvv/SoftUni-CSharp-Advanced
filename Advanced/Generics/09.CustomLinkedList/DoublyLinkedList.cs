@@ -2,14 +2,14 @@
 
 namespace CustomDoublyLinkedList
 {
-    public class DoublyLinkedList
+    public class DoublyLinkedList<T>
     {
         private ListNode head;
         private ListNode tail;
 
         public int Count { get; private set; }
 
-        public void AddFirst(int element)
+        public void AddFirst(T element)
         {
             if (Count == 0)
             {
@@ -26,7 +26,7 @@ namespace CustomDoublyLinkedList
             Count++;
         }
 
-        public void AddLast(int element)
+        public void AddLast(T element)
         {
             if (Count == 0)
             {
@@ -43,7 +43,7 @@ namespace CustomDoublyLinkedList
             Count++;
         }
 
-        public int RemoveFirst()
+        public T RemoveFirst()
         {
             if (Count == 0)
             {
@@ -51,7 +51,7 @@ namespace CustomDoublyLinkedList
             }
             else if (Count == 1)
             {
-                int value = head.Value;
+                T value = head.Value;
                 head = tail = null;
 
                 Count--;
@@ -60,7 +60,7 @@ namespace CustomDoublyLinkedList
             }
             else
             {
-                int value = head.Value;
+                T value = head.Value;
 
                 ListNode newHead = head.NextNode;
                 newHead.PreviousNode = null;
@@ -73,7 +73,7 @@ namespace CustomDoublyLinkedList
             }
         }
 
-        public void ForEach(Action<int> action)
+        public void ForEach(Action<T> action)
         {
             ListNode currentNode = head;
 
@@ -84,14 +84,14 @@ namespace CustomDoublyLinkedList
             }
         }
 
-        public int[] ToArray()
+        public T[] ToArray()
         {
             if (Count == 0)
             {
                 throw new Exception("The list is empty!");
             }
 
-            int[] array = new int[Count];
+            T[] array = new T[Count];
 
             int counter = 0;
             ListNode currentNode = head;
@@ -107,7 +107,7 @@ namespace CustomDoublyLinkedList
             return array;
         }
 
-        public int RemoveLast()
+        public T RemoveLast()
         {
             if (Count == 0)
             {
@@ -115,7 +115,7 @@ namespace CustomDoublyLinkedList
             }
             else if (Count == 1)
             {
-                int value = head.Value;
+                T value = head.Value;
                 head = tail = null;
 
                 Count--;
@@ -124,7 +124,7 @@ namespace CustomDoublyLinkedList
             }
             else
             {
-                int value = tail.Value;
+                T value = tail.Value;
 
                 ListNode newTail = tail.PreviousNode;
                 newTail.NextNode = null;
@@ -139,12 +139,12 @@ namespace CustomDoublyLinkedList
 
         private class ListNode
         {
-            public ListNode(int value)
+            public ListNode(T value)
             {
                 Value = value;
             }
 
-            public int Value { get; set; }
+            public T Value { get; set; }
             public ListNode NextNode { get; set; }
             public ListNode PreviousNode { get; set; }
         }
