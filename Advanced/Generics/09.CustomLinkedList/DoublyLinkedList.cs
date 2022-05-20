@@ -4,8 +4,8 @@ namespace CustomDoublyLinkedList
 {
     public class DoublyLinkedList<T>
     {
-        private ListNode head;
-        private ListNode tail;
+        private ListNode<T> head;
+        private ListNode<T> tail;
 
         public int Count { get; private set; }
 
@@ -13,11 +13,11 @@ namespace CustomDoublyLinkedList
         {
             if (Count == 0)
             {
-                head = tail = new ListNode(element);
+                head = tail = new ListNode<T>(element);
             }
             else
             {
-                ListNode newHead = new ListNode(element);
+                ListNode<T> newHead = new ListNode<T>(element);
                 newHead.NextNode = head;
                 head.PreviousNode = newHead;
                 head = newHead;
@@ -30,11 +30,11 @@ namespace CustomDoublyLinkedList
         {
             if (Count == 0)
             {
-                tail = head = new ListNode(element);
+                tail = head = new ListNode<T>(element);
             }
             else
             {
-                ListNode newTail = new ListNode(element);
+                ListNode<T> newTail = new ListNode<T>(element);
                 newTail.PreviousNode = tail;
                 tail.NextNode = newTail;
                 tail = newTail;
@@ -62,7 +62,7 @@ namespace CustomDoublyLinkedList
             {
                 T value = head.Value;
 
-                ListNode newHead = head.NextNode;
+                ListNode<T> newHead = head.NextNode;
                 newHead.PreviousNode = null;
 
                 head = newHead;
@@ -75,7 +75,7 @@ namespace CustomDoublyLinkedList
 
         public void ForEach(Action<T> action)
         {
-            ListNode currentNode = head;
+            ListNode<T> currentNode = head;
 
             while (currentNode != null)
             {
@@ -94,7 +94,7 @@ namespace CustomDoublyLinkedList
             T[] array = new T[Count];
 
             int counter = 0;
-            ListNode currentNode = head;
+            ListNode<T> currentNode = head;
 
             while (currentNode != null)
             {
@@ -126,7 +126,7 @@ namespace CustomDoublyLinkedList
             {
                 T value = tail.Value;
 
-                ListNode newTail = tail.PreviousNode;
+                ListNode<T> newTail = tail.PreviousNode;
                 newTail.NextNode = null;
 
                 tail = newTail;
@@ -137,7 +137,7 @@ namespace CustomDoublyLinkedList
             }
         }
 
-        private class ListNode
+        private class ListNode<T>
         {
             public ListNode(T value)
             {
@@ -145,8 +145,8 @@ namespace CustomDoublyLinkedList
             }
 
             public T Value { get; set; }
-            public ListNode NextNode { get; set; }
-            public ListNode PreviousNode { get; set; }
+            public ListNode<T> NextNode { get; set; }
+            public ListNode<T> PreviousNode { get; set; }
         }
     }
 }
