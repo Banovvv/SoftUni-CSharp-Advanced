@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _08.Threeuple
+﻿namespace _08.Threeuple
 {
     public class Threeuple<T1, T2, T3>
     {
