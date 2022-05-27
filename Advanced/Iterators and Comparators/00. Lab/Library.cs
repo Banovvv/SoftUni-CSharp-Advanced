@@ -9,7 +9,7 @@ namespace IteratorsAndComparators
         public Library(params Book[] books)
         {
             Books = new List<Book>(books);
-            Books.Sort();
+            Books.Sort(new BookComparator());
         }
 
         public List<Book> Books { get; set; }
