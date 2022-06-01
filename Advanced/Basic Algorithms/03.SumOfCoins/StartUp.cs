@@ -30,14 +30,11 @@ namespace _03.SumOfCoins
             {
                 int currentCoin = coins.ElementAt(i);
 
-                if (targetSum - currentCoin >= 0)
+                if (targetSum / currentCoin >= 1)
                 {
-                    coinsUsed.Add(currentCoin, 0);
-                    while (targetSum - currentCoin >= 0)
-                    {
-                        targetSum -= currentCoin;
-                        coinsUsed[currentCoin]++;
-                    }
+                    int numberOfCoins = targetSum / currentCoin;
+                    coinsUsed.Add(currentCoin, numberOfCoins);
+                    targetSum -= currentCoin * numberOfCoins;
                 }
             }
 
