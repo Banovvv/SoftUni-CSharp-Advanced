@@ -1,7 +1,15 @@
 # SoftUni-CSharp-Advanced
 My solutions to SoftUni's CSharp Advanced problems:
 
-### Stacks and Queues
+<table style="width:100%">
+  <tr>
+    <th>Advanced</th>
+    <th>OOP</th>
+  </tr>
+  <tr>
+    <td>
+      
+### Stacks and Queues      
 1. [Basic Stack Operations](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Stacks%20and%20Queues/01.BasicStackOperations/Program.cs)
 2. [Basic Queue Operations](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Stacks%20and%20Queues/02.BasicQueueOperations/Program.cs)
 3. [Maximum and Minimum Element](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Stacks%20and%20Queues/03.MaximumAndMinimumElement/Program.cs)
@@ -15,7 +23,7 @@ My solutions to SoftUni's CSharp Advanced problems:
 11. [Key Revolver](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Stacks%20and%20Queues/11.KeyRevolver/Program.cs)
 12. [Cups And Bottles](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Stacks%20and%20Queues/12.CupsAndBottles/Program.cs)
 
-### Multidimensional Arrays
+### Multidimensional Arrays      
 1. [Diagonal Difference](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/1.DiagonalDifference/Program.cs)
 2. [Squares in Matrix](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/2.SquaresInMatrix/Program.cs)
 3. [Maximal Sum](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/3.MaximalSum/Program.cs)
@@ -40,3 +48,21 @@ My solutions to SoftUni's CSharp Advanced problems:
 4. [Directory Traversal](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Streams%2C%20Files%20and%20Directories/04.DirectoryTraversal)
 5. [Copy Directory Contents](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Streams%2C%20Files%20and%20Directories/05.CopyDirectoryContents)
 6. [Zip and Extract](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Streams%2C%20Files%20and%20Directories/06.ZipAndExtracts)
+
+### Functional Programming
+1. []()
+2. []()
+3. []()
+4. []()
+5. []()
+6. []()
+7. []()
+8. []()
+9. []()
+10. []()
+11. []()
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
