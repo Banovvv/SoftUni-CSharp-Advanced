@@ -14,3 +14,12 @@ My solutions to SoftUni's CSharp Advanced problems
 10. [Crossroads](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Stacks%20and%20Queues/10.Crossroads/Program.cs)
 11. [Key Revolver](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Stacks%20and%20Queues/11.KeyRevolver/Program.cs)
 12. [Cups And Bottles](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Stacks%20and%20Queues/12.CupsAndBottles/Program.cs)
+
+## Multidimensional Arrays
+1. [Diagonal Difference](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/1.DiagonalDifference/Program.cs)
+2. [Squares in Matrix](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/2.SquaresInMatrix/Program.cs)
+3. [Maximal Sum](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/3.MaximalSum/Program.cs)
+4. [Matrix Shuffling](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/4.MatrixShuffling/Program.cs)
+5. [Snake Moves](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/5.SnakeMoves/Program.cs)
+6. [Jagged Array Manipulator](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/6.JaggedArrayManipulator/Program.cs)
+7. [Knight Game](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/7.KnightGame/Program.cs)
