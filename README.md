@@ -103,8 +103,30 @@ My solutions to SoftUni's CSharp Advanced problems:
 5. [Merge Sort](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/05.MergeSort)
 6. [Quick Sort](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/06.Quicksort)
 7. [Binary Search](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/07.BinarySearch)
-    </td>
+    </td>    
     <td>
+      
+### Inheritance
+1. [Person]()
+2. [Zoo]()
+3. [Players and Monsters]()
+4. [Need for Speed]()
+5. [Restaurant]()
+6. [Animals]()
+### Encapsulation
+      
+### Interfaces and Abstraction
+      
+### Polymorphism
+      
+### Exceptions and Error Handling
+      
+### Reflection and Attributes
+      
+### Unit Testing
+      
+### Mocking and Test Driven Development
+    
     </td>
   </tr>
 </table>
