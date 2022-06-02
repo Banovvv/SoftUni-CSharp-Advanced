@@ -75,34 +75,34 @@ My solutions to SoftUni's CSharp Advanced problems:
 10. [SoftUni Parking](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/10.SoftUniParking)
       
 ### Generics
-1. [Action Print]()
-2. [Knights of Honor]()
-3. [Custom Min Function]()
-4. [Find Evens or Odds]()
-5. [Applied Arithmetics]()
-6. [Reverse and Exclude]()
-7. [Predicate For Names]()
-8. [List Of Predicates]()
-9. [Predicate Party!]() 
+1. [Generic Box of String](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/01.GenericBoxOfString)
+2. [Generic Box of Ingeter](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/02.GenericBoxOfInteger)
+3. [Generic Swap Method String](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/03.GenericSwapMethodString)
+4. [GenericSwapMethod Integer](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/04.GenericSwapMethodInteger)
+5. [Generic Count Method String](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/05.GenericCountMethodString)
+6. [Generic Count Method Double](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/06.GenericCountMethodDouble)
+7. [Tuple](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/07.Tuple)
+8. [Threeuple](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/08.Threeuple)
+9. [Custom LinkedList](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/09.CustomLinkedList) 
+      
 ### Iterators and Comparators
-1. [Unique Usernames]()
-2. [Sets of Elements]()
-3. [Periodic Table]()
-4. [Even Times]()
-5. [Count Symbols]()
-6. [Wardrobe]()
-7. [The V-Logger]()
+0. [Lab](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Iterators%20and%20Comparators/00.%20Lab)
+1. [Listy Iterator](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Iterators%20and%20Comparators/01.ListyIterator)
+2. [Collection](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Iterators%20and%20Comparators/02.Collection)
+3. [Stack](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Iterators%20and%20Comparators/03.Stack)
+4. [Froggy](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Iterators%20and%20Comparators/04.Froggy)
+5. [Comparing Objects](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Iterators%20and%20Comparators/05.ComparingObjects)
+6. [Equality Logic](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Iterators%20and%20Comparators/06.EqualityLogic)
+7. [Custom Comparator](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Iterators%20and%20Comparators/07.CustomComparator)
       
 ### Basic Algorithms
-1. [Unique Usernames]()
-2. [Sets of Elements]()
-3. [Periodic Table]()
-4. [Even Times]()
-5. [Count Symbols]()
-6. [Wardrobe]()
-7. [The V-Logger]()
-      
-      
+1. [Recursive Array Sum](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/01.RecursiveArraySum)
+2. [Recursive Factorial](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/02.RecursiveFactorial)
+3. [Sum of Coins](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/03.SumOfCoins)
+4. [Set Cover](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/04.SetCover)
+5. [Merge Sort](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/05.MergeSort)
+6. [Quick Sort](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/06.Quicksort)
+7. [Binary Search](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Basic%20Algorithms/07.BinarySearch)
     </td>
     <td>
     </td>
