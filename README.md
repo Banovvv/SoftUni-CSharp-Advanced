@@ -23,3 +23,12 @@ My solutions to SoftUni's CSharp Advanced problems
 5. [Snake Moves](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/5.SnakeMoves/Program.cs)
 6. [Jagged Array Manipulator](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/6.JaggedArrayManipulator/Program.cs)
 7. [Knight Game](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Multidimensional%20Arrays/7.KnightGame/Program.cs)
+
+## Sets and Dictionaries Advanced
+1. [Unique Usernames](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Sets%20and%20Dictionaries%20Advanced/01.UniqueUsernames/Program.cs)
+2. [Sets of Elements](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Sets%20and%20Dictionaries%20Advanced/02.SetsOfElements/Program.cs)
+3. [Periodic Table](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Sets%20and%20Dictionaries%20Advanced/03.PeriodicTable/Program.cs)
+4. [Even Times](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Sets%20and%20Dictionaries%20Advanced/04.EvenTimes/Program.cs)
+5. [Count Symbols](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Sets%20and%20Dictionaries%20Advanced/05.CountSymbols/Program.cs)
+6. [Wardrobe](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Sets%20and%20Dictionaries%20Advanced/06.Wardrobe/Program.cs)
+7. [The V-Logger](https://github.com/Banovvv/SoftUni-CSharp-Advanced/blob/master/Advanced/Sets%20and%20Dictionaries%20Advanced/07.TheV-Logger/Program.cs)
