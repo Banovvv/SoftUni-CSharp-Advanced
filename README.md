@@ -61,6 +61,48 @@ My solutions to SoftUni's CSharp Advanced problems:
 9. [Predicate Party!](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/09.PredicateParty!)
 10. [The Party Reservation Filter Module](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/10.ThePartyReservationFilterModule)
 11. [TriFunction](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/11.TriFunction)
+      
+### Defining Classes
+1. [Define a Class Person](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/01.DefineAClassPerson)
+2. [Creating Constructors](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/02.CreatingConstructors)
+3. [Oldest Family Member](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/03.OldestFamilyMember)
+4. [Opinion Poll](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/04.OpinionPoll)
+5. [Date Modifier](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/05.DateModifier)
+6. [Speed Racing](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/06.SpeedRacing)
+7. [Raw Data](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/07.RawData)
+8. [Car Salesman](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/08.CarSalesman)
+9. [Pokemon Trainer](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/09.PokemonTrainer)
+10. [SoftUni Parking](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Defining%20classes/10.SoftUniParking)
+      
+### Generics
+1. [Action Print]()
+2. [Knights of Honor]()
+3. [Custom Min Function]()
+4. [Find Evens or Odds]()
+5. [Applied Arithmetics]()
+6. [Reverse and Exclude]()
+7. [Predicate For Names]()
+8. [List Of Predicates]()
+9. [Predicate Party!]() 
+### Iterators and Comparators
+1. [Unique Usernames]()
+2. [Sets of Elements]()
+3. [Periodic Table]()
+4. [Even Times]()
+5. [Count Symbols]()
+6. [Wardrobe]()
+7. [The V-Logger]()
+      
+### Basic Algorithms
+1. [Unique Usernames]()
+2. [Sets of Elements]()
+3. [Periodic Table]()
+4. [Even Times]()
+5. [Count Symbols]()
+6. [Wardrobe]()
+7. [The V-Logger]()
+      
+      
     </td>
     <td>
     </td>
