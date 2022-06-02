@@ -50,17 +50,17 @@ My solutions to SoftUni's CSharp Advanced problems:
 6. [Zip and Extract](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Streams%2C%20Files%20and%20Directories/06.ZipAndExtracts)
 
 ### Functional Programming
-1. []()
-2. []()
-3. []()
-4. []()
-5. []()
-6. []()
-7. []()
-8. []()
-9. []()
-10. []()
-11. []()
+1. [Action Print](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/01.ActionPrint)
+2. [Knights of Honor](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/02.KnightsOfHonor)
+3. [Custom Min Function](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/03.CustomMinFunction)
+4. [Find Evens or Odds](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/04.FindEvensOrOdds)
+5. [Applied Arithmetics](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/05.AppliedArithmetics)
+6. [Reverse and Exclude](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/06.ReverseAndExclude)
+7. [Predicate For Names](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/07.PredicateForNames)
+8. [List Of Predicates](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/08.ListOfPredicates)
+9. [Predicate Party!](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/09.PredicateParty!)
+10. [The Party Reservation Filter Module](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/10.ThePartyReservationFilterModule)
+11. [TriFunction](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Functional%20Programming/11.TriFunction)
     </td>
     <td>
     </td>
