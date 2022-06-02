@@ -13,34 +13,19 @@ namespace _06.Quicksort
 
             Console.WriteLine(string.Join(" ", numbers));
         }
-        //static void QuickSort(int[] array)
-        //{
-        //    for (int i = 0; i < array.Length; i++)
-        //    {
-        //        int low = i;
-
-        //        for (int j = array.Length - 1; j > i; j--)
-        //        {
-        //            if (array[j] < array[i])
-        //            {
-        //                low = j;
-        //            }
-        //        }
-
-        //        SwapValues(array, low, i);
-        //    }
-        //}
         static void QuickSort(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
                 int low = i;
+                int minNumber = int.MaxValue;
 
                 for (int j = i + 1; j < array.Length; j++)
                 {
-                    if (array[j] < array[i])
+                    if (array[j] < array[i] && array[j] < minNumber)
                     {
                         low = j;
+                        minNumber = array[j];
                     }
                 }
 
