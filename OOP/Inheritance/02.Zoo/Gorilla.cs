@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _02.Zoo
+namespace Zoo
 {
     public class Gorilla : Mammal
     {
+        public Gorilla(string name) : base(name)
+        {
+
+        }
     }
 }
