@@ -151,7 +151,6 @@ My solutions to SoftUni's CSharp Advanced problems:
 4. [Fighting Arena]()     
 ### Mocking and Test Driven Development
 1. [Fake Axe and Dummy]()
-2. []()
  
     </td>
   </tr>
