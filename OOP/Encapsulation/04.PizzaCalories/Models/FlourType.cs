@@ -6,8 +6,7 @@ namespace _04.PizzaCalories.Models
     internal class FlourType
     {
         private string type;
-        private double modifier;
-        private readonly List<string> allowedFlourTypes = new List<string>() { "White", "Wholegrain" };
+        private readonly List<string> allowedFlourTypes = new List<string>() { "white", "wholegrain" };
 
         public FlourType(string type)
         {
@@ -28,22 +27,15 @@ namespace _04.PizzaCalories.Models
             }
         }
 
-        public double Modifier
-        {
-            get => modifier;
-            private set
-            {
-                modifier = CalculateModifier(Type);
-            }
-        }
+        public double Modifier => CalculateModifier(Type);
 
         private double CalculateModifier(string type)
         {
-            if (type == "White")
+            if (type.ToLower() == "white")
             {
                 return 1.5;
             }
-            else if (type == "Wholegrain")
+            else if (type.ToLower() == "wholegrain")
             {
                 return 1.0;
             }
@@ -53,6 +45,6 @@ namespace _04.PizzaCalories.Models
             }
         }
 
-        private bool ValidateFlourType(string value) => allowedFlourTypes.Contains(value);
+        private bool ValidateFlourType(string value) => allowedFlourTypes.Contains(value.ToLower());
     }
 }

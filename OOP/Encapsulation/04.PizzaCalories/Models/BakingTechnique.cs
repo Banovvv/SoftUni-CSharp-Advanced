@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace _04.PizzaCalories.Models
 {
     internal class BakingTechnique
     {
         private string technique;
-        private double modifier;
         private readonly List<string> allowedBakingTechniques = new List<string>() { "crispy", "chewy", "homemade" };
 
         public BakingTechnique(string technique)
@@ -28,26 +26,19 @@ namespace _04.PizzaCalories.Models
                 technique = value;
             }
         }
-        public double Modifier
-        {
-            get => modifier;
-            private set
-            {
-                modifier = CalculateModifier(Technique);
-            }
-        }
+        public double Modifier => CalculateModifier(Technique);
 
         private double CalculateModifier(string technique)
         {
-            if (technique == "Crispy")
+            if (technique.ToLower() == "crispy")
             {
                 return 0.9;
             }
-            else if (technique == "Chewy")
+            else if (technique.ToLower() == "chewy")
             {
                 return 1.1;
             }
-            else if (technique == "Homemade")
+            else if (technique.ToLower() == "homemade")
             {
                 return 1.0;
             }
@@ -57,6 +48,6 @@ namespace _04.PizzaCalories.Models
             }
         }
 
-        private bool ValidateTehnique(string value) => allowedBakingTechniques.Contains(value);
+        private bool ValidateTehnique(string value) => allowedBakingTechniques.Contains(value.ToLower());
     }
 }

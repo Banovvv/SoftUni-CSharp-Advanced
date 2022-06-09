@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _04.PizzaCalories.Models
 {
-    internal class Dough
+    public class Dough
     {
         private FlourType flourType;
         private BakingTechnique bakingTechnique;
         private double weight;
-        private double totalCalories;
         private readonly int caloriesPerGram = 2;
         private readonly int minWeight = 1;
         private readonly int maxWeight = 200;
@@ -28,7 +25,7 @@ namespace _04.PizzaCalories.Models
             get => weight;
             set
             {
-                if(value < minWeight || value > maxWeight)
+                if (value < minWeight || value > maxWeight)
                 {
                     throw new ArgumentException($"Dough weight should be in the range [{minWeight}..{maxWeight}].");
                 }
@@ -36,14 +33,7 @@ namespace _04.PizzaCalories.Models
                 weight = value;
             }
         }
-        public double TotalCalories
-        {
-            get => totalCalories;
-            private set
-            {
-                totalCalories = CalculateTotalCalories();
-            }
-        }
+        public double TotalCalories => CalculateTotalCalories();
 
         private double CalculateTotalCalories()
         {

@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace _04.PizzaCalories.Models
 {
-    internal class Topping
+    public class Topping
     {
         private string type;
         private double weight;
-        private double modifier;
-        private double totalCalories;
         private readonly int minWeight = 1;
         private readonly int maxWeight = 50;
-        private readonly List<string> allowedToppings = new List<string>() { "Meat", "Veggies", "Cheese", "Sauce" };
+        private readonly double baseCaloriesPerGram = 2;
+        private readonly List<string> allowedToppings = new List<string>() { "meat", "veggies", "cheese", "sauce" };
 
         public Topping(string type, double weight)
         {
@@ -39,46 +37,32 @@ namespace _04.PizzaCalories.Models
             {
                 if (value < minWeight || value > maxWeight)
                 {
-                    throw new ArgumentException($"{Type} weight should be in the range[{minWeight}..{maxWeight}].");
+                    throw new ArgumentException($"{Type} weight should be in the range [{minWeight}..{maxWeight}].");
                 }
 
                 weight = value;
             }
         }
-        public double Modifier
-        {
-            get => modifier;
-            private set
-            {
-                modifier = CalculateModifier(Type);
-            }
-        }
-        public double TotalCalories
-        {
-            get => totalCalories;
-            private set
-            {
-                totalCalories = CalculateTotalCalories();
-            }
-        }
+        public double Modifier => CalculateModifier(Type);
+        public double TotalCalories => CalculateTotalCalories();
 
-        private double CalculateTotalCalories() => Modifier * Weight;
+        private double CalculateTotalCalories() => Modifier * Weight * baseCaloriesPerGram;
 
         private double CalculateModifier(string type)
         {
-            if (type == "Meat")
+            if (type.ToLower() == "meat")
             {
-                return 1.1;
+                return 1.2;
             }
-            else if (type == "Veggies")
+            else if (type.ToLower() == "veggies")
             {
                 return 0.8;
             }
-            else if (type == "Cheese")
+            else if (type.ToLower() == "cheese")
             {
                 return 1.1;
             }
-            else if (type == "Sauce")
+            else if (type.ToLower() == "sauce")
             {
                 return 0.9;
             }
@@ -88,6 +72,6 @@ namespace _04.PizzaCalories.Models
             }
         }
 
-        private bool ValidTopping(string value) => allowedToppings.Contains(value);
+        private bool ValidTopping(string value) => allowedToppings.Contains(value.ToLower());
     }
 }
