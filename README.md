@@ -130,7 +130,10 @@ My solutions to SoftUni's CSharp Advanced problems:
 8. [Collection Hierarchy]()
 9. [Explicit Interfaces]()
 ### Polymorphism
-      
+1. [Vehicles]()
+2. [Vehicles Extension]()
+3. [Raiding]()
+4. [Wild Farm]()
 ### Exceptions and Error Handling
       
 ### Reflection and Attributes
