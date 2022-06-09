@@ -8,7 +8,7 @@ namespace _05.FootballTeamGenerator.Model
     public class Team
     {
         private string name;
-        private List<Player> players;
+        private readonly List<Player> players;
 
         public Team(string name)
         {
