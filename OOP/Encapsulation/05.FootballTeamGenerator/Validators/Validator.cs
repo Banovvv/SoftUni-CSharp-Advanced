@@ -15,5 +15,15 @@ namespace _05.FootballTeamGenerator.Validators
 
             return true;
         }
+
+        internal static bool ValidateStat(int stat, int minValue, int maxValue)
+        {
+            if(stat < minValue || stat > maxValue)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

@@ -43,7 +43,7 @@ namespace _05.FootballTeamGenerator.Model
         {
             Player player = players.First(x => x.Name == playerName);
 
-            if(player == null)
+            if (player == null)
             {
                 Console.WriteLine($"Player {player.Name} is not in {this.Name} team.");
             }
@@ -53,9 +53,6 @@ namespace _05.FootballTeamGenerator.Model
             return player;
         }
 
-        private int CalculateRating()
-        {
-            throw new NotImplementedException();
-        }
+        private int CalculateRating() => (int)players.Average(x => x.Rating);
     }
 }
