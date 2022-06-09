@@ -145,7 +145,10 @@ My solutions to SoftUni's CSharp Advanced problems:
 1. [Command Pattern]()
 2. [Validation Attributes]()
 ### Unit Testing
-      
+1. [Database]()
+2. [Extended Database]()
+3. [Car Manager]()
+4. [Fighting Arena]()     
 ### Mocking and Test Driven Development
 1. [Fake Axe and Dummy]()
 2. []()
