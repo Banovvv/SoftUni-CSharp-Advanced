@@ -120,7 +120,15 @@ My solutions to SoftUni's CSharp Advanced problems:
 4. [Pizza Calories]()
 5. [Football Team Generator]()
 ### Interfaces and Abstraction
-      
+1. [Define an Interface IPerson]()
+2. [Multiple Implementation]()
+3. [Telephony]()
+4. [Border Control]()
+5. [Birthday Celebrations]()
+6. [Food Shortage]()
+7. [Military Elite]()
+8. [Collection Hierarchy]()
+9. [Explicit Interfaces]()
 ### Polymorphism
       
 ### Exceptions and Error Handling
