@@ -13,6 +13,7 @@ namespace _05.FootballTeamGenerator.Model
         public Team(string name)
         {
             Name = name;
+            players = new List<Player>();
         }
 
         public string Name
@@ -22,7 +23,7 @@ namespace _05.FootballTeamGenerator.Model
             {
                 if (!Validator.ValidateName(value))
                 {
-                    Console.WriteLine("A name should not be empty.");
+                    throw new ArgumentException("A name should not be empty.");
                 }
 
                 name = value;
@@ -41,18 +42,20 @@ namespace _05.FootballTeamGenerator.Model
 
         public Player RemovePlayer(string playerName)
         {
-            Player player = players.First(x => x.Name == playerName);
+            Player player = players.FirstOrDefault(x => x.Name == playerName);
 
             if (player == null)
             {
-                Console.WriteLine($"Player {player.Name} is not in {this.Name} team.");
+                throw new ArgumentException($"Player {playerName} is not in {this.Name} team.");
             }
-
-            players.Remove(player);
+            else
+            {
+                players.Remove(player);
+            }
 
             return player;
         }
 
-        private int CalculateRating() => (int)players.Average(x => x.Rating);
+        private int CalculateRating() => players.Count != 0 ? (int)Math.Round(players.Average(x => x.Rating)) : 0;
     }
 }

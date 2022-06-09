@@ -24,7 +24,7 @@ namespace _05.FootballTeamGenerator.Model
             Shooting = shooting;
         }
 
-        public double Rating => (Endurance + Sprint + Dribble + Passing + Shooting) / 5.0f;
+        public int Rating => (int)Math.Round((Endurance + Sprint + Dribble + Passing + Shooting) / 5.0f);
         public string Name
         {
             get => name;
@@ -32,7 +32,7 @@ namespace _05.FootballTeamGenerator.Model
             {
                 if (!Validator.ValidateName(value))
                 {
-                    Console.WriteLine("A name should not be empty.");
+                    throw new ArgumentException("A name should not be empty.");
                 }
 
                 name = value;
@@ -45,7 +45,7 @@ namespace _05.FootballTeamGenerator.Model
             {
                 if (!Validator.ValidateStat(value, minStatValue, maxStatValue))
                 {
-                    Console.WriteLine($"{nameof(this.Endurance)} should be between 0 and 100.");
+                    throw new ArgumentException($"{nameof(this.Endurance)} should be between 0 and 100.");
                 }
 
                 endurance = value;
@@ -58,7 +58,7 @@ namespace _05.FootballTeamGenerator.Model
             {
                 if (!Validator.ValidateStat(value, minStatValue, maxStatValue))
                 {
-                    Console.WriteLine($"{nameof(this.Sprint)} should be between 0 and 100.");
+                    throw new ArgumentException($"{nameof(this.Sprint)} should be between 0 and 100.");
                 }
 
                 sprint = value;
@@ -71,7 +71,7 @@ namespace _05.FootballTeamGenerator.Model
             {
                 if (!Validator.ValidateStat(value, minStatValue, maxStatValue))
                 {
-                    Console.WriteLine($"{nameof(this.Dribble)} should be between 0 and 100.");
+                    throw new ArgumentException($"{nameof(this.Dribble)} should be between 0 and 100.");
                 }
 
                 dribble = value;
@@ -84,7 +84,7 @@ namespace _05.FootballTeamGenerator.Model
             {
                 if (!Validator.ValidateStat(value, minStatValue, maxStatValue))
                 {
-                    Console.WriteLine($"{nameof(this.Passing)} should be between 0 and 100.");
+                    throw new ArgumentException($"{nameof(this.Passing)} should be between 0 and 100.");
                 }
 
                 passing = value;
@@ -97,7 +97,7 @@ namespace _05.FootballTeamGenerator.Model
             {
                 if (!Validator.ValidateStat(value, minStatValue, maxStatValue))
                 {
-                    Console.WriteLine($"{nameof(this.Shooting)} should be between 0 and 100.");
+                    throw new ArgumentException($"{nameof(this.Shooting)} should be between 0 and 100.");
                 }
 
                 shooting = value;
