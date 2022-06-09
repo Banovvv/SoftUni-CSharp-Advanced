@@ -114,7 +114,10 @@ My solutions to SoftUni's CSharp Advanced problems:
 5. [Restaurant]()
 6. [Animals]()
 ### Encapsulation
-      
+1. [Class Box Data]()
+2. [Animal Farm]()
+3. [Shopping Spree]()
+4. [Pizza Calories]()
 ### Interfaces and Abstraction
       
 ### Polymorphism
