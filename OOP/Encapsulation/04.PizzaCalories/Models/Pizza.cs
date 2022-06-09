@@ -8,7 +8,6 @@ namespace _04.PizzaCalories.Models
     {
         private string name;
         private Dough dough;
-        private double totalCalories;
         private readonly int maxNameLength = 15;
         private readonly int maxNumberOfToppings = 10;
         private List<Topping> toppings = new List<Topping>();
