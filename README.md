@@ -118,6 +118,7 @@ My solutions to SoftUni's CSharp Advanced problems:
 2. [Animal Farm]()
 3. [Shopping Spree]()
 4. [Pizza Calories]()
+5. [Football Team Generator]()
 ### Interfaces and Abstraction
       
 ### Polymorphism
