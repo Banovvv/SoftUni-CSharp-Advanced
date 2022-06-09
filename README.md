@@ -135,7 +135,12 @@ My solutions to SoftUni's CSharp Advanced problems:
 3. [Raiding]()
 4. [Wild Farm]()
 ### Exceptions and Error Handling
-      
+1. [Square Root]()
+2. [Enter Numbers]()
+3. [Cards]()
+4. [Sum of Integers]()
+5. [Play Catch]()
+6. [Money Transactions]()
 ### Reflection and Attributes
       
 ### Unit Testing
