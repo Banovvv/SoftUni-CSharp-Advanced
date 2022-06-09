@@ -142,12 +142,13 @@ My solutions to SoftUni's CSharp Advanced problems:
 5. [Play Catch]()
 6. [Money Transactions]()
 ### Reflection and Attributes
-      
+1. [Command Pattern]()
+2. [Validation Attributes]()
 ### Unit Testing
       
 ### Mocking and Test Driven Development
 1. [Fake Axe and Dummy]()
-[]()
+2. []()
  
     </td>
   </tr>
