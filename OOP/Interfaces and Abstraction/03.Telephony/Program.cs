@@ -9,7 +9,7 @@ namespace _03.Telephony
         {
             string[] numbers = Console.ReadLine().Split();
             string[] websites = Console.ReadLine().Split();
-
+             
             StationaryPhone stationaryPhone = new StationaryPhone();
             Smartphone smartphone = new Smartphone();
 
