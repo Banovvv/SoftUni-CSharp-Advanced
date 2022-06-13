@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace _07.MilitaryElite.Models.Utils
 {
@@ -35,5 +34,7 @@ namespace _07.MilitaryElite.Models.Utils
         {
             State = "Finished";
         }
+
+        public override string ToString() => $"Code Name: {CodeName} State: {State}";
     }
 }

@@ -1,5 +1,4 @@
 ﻿using _07.MilitaryElite.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,6 +11,21 @@ namespace _07.MilitaryElite.Models
             Privates = new List<Private>(privates);
         }
 
-        public IReadOnlyCollection<Private> Privates {get; private set;}
+        public IReadOnlyCollection<Private> Privates { get; private set; }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($"Name: {FirstName} {LastName} Id: {Id} Salary: {Salary:F2}");
+            sb.AppendLine("Privates:");
+
+            foreach (Private @private in Privates)
+            {
+                sb.AppendLine(@private.ToString());
+            }
+
+            return sb.ToString().Trim();
+        }
     }
 }

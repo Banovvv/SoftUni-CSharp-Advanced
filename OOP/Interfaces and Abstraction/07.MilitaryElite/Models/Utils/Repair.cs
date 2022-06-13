@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _07.MilitaryElite.Models.Utils
+﻿namespace _07.MilitaryElite.Models.Utils
 {
     public class Repair
     {
@@ -14,5 +10,7 @@ namespace _07.MilitaryElite.Models.Utils
 
         public string PartName { get; private set; }
         public int HoursWorked { get; private set; }
+
+        public override string ToString() => $"Part Name: {PartName} Hours Worked: {HoursWorked}";
     }
 }
