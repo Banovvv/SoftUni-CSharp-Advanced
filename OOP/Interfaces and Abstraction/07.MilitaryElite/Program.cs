@@ -64,9 +64,9 @@ namespace _07.MilitaryElite
                     {
                         soldiers.Add(new Engineer(id, firstName, lastName, salary, corps, repairs));
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        // Do nothing
+                        Console.WriteLine(ex.Message);
                     }
                 }
                 else if (soldierType == "Commando")
@@ -86,9 +86,9 @@ namespace _07.MilitaryElite
                         {
                             missions.Add(new Mission(partName, state));
                         }
-                        catch
+                        catch (Exception ex)
                         {
-                            // Do nothing
+                            Console.WriteLine(ex.Message);
                         }
                     }
 
@@ -96,9 +96,9 @@ namespace _07.MilitaryElite
                     {
                         soldiers.Add(new Commando(id, firstName, lastName, salary, corps, missions));
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        // Do nothing
+                        Console.WriteLine(ex.Message);
                     }
                 }
                 else if (soldierType == "Spy")
