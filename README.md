@@ -107,12 +107,12 @@ My solutions to SoftUni's CSharp Advanced problems:
     <td valign="top">
       
 ### Inheritance
-1. [Person]()
-2. [Zoo]()
-3. [Players and Monsters]()
-4. [Need for Speed]()
-5. [Restaurant]()
-6. [Animals]()
+1. [Person](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Inheritance/01.Person)
+2. [Zoo](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Inheritance/02.Zoo)
+3. [Players and Monsters](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Inheritance/03.PlayersAndMonsters)
+4. [Need for Speed](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Inheritance/04.NeedForSpeed)
+5. [Restaurant](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Inheritance/05.Restaurant)
+6. [Animals](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Inheritance/06.Animals)
 ### Encapsulation
 1. [Class Box Data]()
 2. [Animal Farm]()
