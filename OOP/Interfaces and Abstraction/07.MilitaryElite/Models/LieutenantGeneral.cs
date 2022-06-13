@@ -6,12 +6,12 @@ namespace _07.MilitaryElite.Models
 {
     public class LieutenantGeneral : Private, ILieutenantGeneral
     {
-        public LieutenantGeneral(int id, string firstName, string lastName, decimal salary, IEnumerable<Private> privates) : base(id, firstName, lastName, salary)
+        public LieutenantGeneral(int id, string firstName, string lastName, decimal salary, IEnumerable<Soldier> privates) : base(id, firstName, lastName, salary)
         {
-            Privates = new List<Private>(privates);
+            Privates = new List<Soldier>(privates);
         }
 
-        public IReadOnlyCollection<Private> Privates { get; private set; }
+        public IReadOnlyCollection<Soldier> Privates { get; private set; }
 
         public override string ToString()
         {
@@ -22,7 +22,7 @@ namespace _07.MilitaryElite.Models
 
             foreach (Private @private in Privates)
             {
-                sb.AppendLine(@private.ToString());
+                sb.AppendLine($"  {@private}");
             }
 
             return sb.ToString().Trim();

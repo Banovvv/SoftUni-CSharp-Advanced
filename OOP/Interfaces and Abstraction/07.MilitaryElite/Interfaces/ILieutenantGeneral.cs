@@ -7,6 +7,6 @@ namespace _07.MilitaryElite.Interfaces
 {
     public interface ILieutenantGeneral
     {
-        IReadOnlyCollection<Private> Privates { get; }
+        IReadOnlyCollection<Soldier> Privates { get; }
     }
 }

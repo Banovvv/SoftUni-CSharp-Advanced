@@ -35,7 +35,7 @@ namespace _07.MilitaryElite.Models
 
             foreach (Mission mission in Missions)
             {
-                sb.AppendLine(mission.ToString());
+                sb.AppendLine($"  {mission}");
             }
 
             return sb.ToString().Trim();

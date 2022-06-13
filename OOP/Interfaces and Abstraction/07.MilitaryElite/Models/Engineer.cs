@@ -24,7 +24,7 @@ namespace _07.MilitaryElite.Models
 
             foreach (Repair repair in Repairs)
             {
-                sb.AppendLine(repair.ToString());
+                sb.AppendLine($"  {repair}");
             }
 
             return sb.ToString().Trim();
