@@ -40,7 +40,7 @@ namespace _07.MilitaryElite
                     decimal salary = decimal.Parse(commandArgs[4]);
                     int[] privateIds = commandArgs.Skip(5).Select(int.Parse).ToArray();
 
-                    var privatesToAdd = soldiers.Where(x => privateIds.Contains(x.Id) && x.GetType() == typeof(Private));
+                    var privatesToAdd = soldiers.Where(x => privateIds.Contains(x.Id) && x.GetType() == typeof(Private)).OrderByDescending(x=>x.Id);
 
                     soldiers.Add(new LieutenantGeneral(id, firstName, lastName, salary, privatesToAdd));
                 }
