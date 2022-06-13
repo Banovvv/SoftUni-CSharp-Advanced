@@ -114,11 +114,11 @@ My solutions to SoftUni's CSharp Advanced problems:
 5. [Restaurant](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Inheritance/05.Restaurant)
 6. [Animals](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Inheritance/06.Animals)
 ### Encapsulation
-1. [Class Box Data]()
-2. [Animal Farm]()
-3. [Shopping Spree]()
-4. [Pizza Calories]()
-5. [Football Team Generator]()
+1. [Class Box Data](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Encapsulation/01.ClassBoxData)
+2. [Animal Farm](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Encapsulation/02.AnimalFarm)
+3. [Shopping Spree](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Encapsulation/03.ShoppingSpree)
+4. [Pizza Calories](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Encapsulation/04.PizzaCalories)
+5. [Football Team Generator](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Encapsulation/05.FootballTeamGenerator)
 ### Interfaces and Abstraction
 1. [Define an Interface IPerson]()
 2. [Multiple Implementation]()
