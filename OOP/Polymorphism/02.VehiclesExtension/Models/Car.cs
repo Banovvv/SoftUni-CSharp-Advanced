@@ -6,12 +6,12 @@ namespace _02.VehiclesExtension.Models
 {
     public class Car : Vehicle
     {
-        private decimal conditioner;
+        private decimal conditioner = 0.9M;
 
         public Car(decimal fuel, decimal fuelConsumption, decimal tankCapacity) : base(fuel, fuelConsumption, tankCapacity)
         {
         }
 
-        protected override decimal Conditioner { get => conditioner; set => conditioner = 0.9M; }
+        protected override decimal Conditioner { get => conditioner; }
     }
 }

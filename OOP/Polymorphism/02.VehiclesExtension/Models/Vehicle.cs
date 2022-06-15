@@ -30,9 +30,9 @@ namespace _02.VehiclesExtension.Models
         }
         public decimal FuelConsumption { get; protected set; }
         public decimal TankCapacity { get; protected set; }
-        protected abstract decimal Conditioner { get; set; }
+        protected virtual decimal Conditioner { get; }
 
-        public virtual void Drive(decimal kilometers)
+        public void Drive(decimal kilometers)
         {
             if (Fuel - (FuelConsumption + Conditioner) * kilometers > 0)
             {

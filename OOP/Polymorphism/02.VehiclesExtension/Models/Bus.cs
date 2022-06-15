@@ -2,7 +2,7 @@
 {
     public class Bus : Vehicle
     {
-        private bool people;
+        private bool people = true;
         private decimal conditioner;
 
         public Bus(decimal fuel, decimal fuelConsumption, decimal tankCapacity) : base(fuel, fuelConsumption, tankCapacity)
@@ -11,15 +11,14 @@
 
         protected override decimal Conditioner
         {
-            get => conditioner;
-            set
+            get
             {
                 if (people)
                 {
-                    conditioner = 1.6M;
+                    return 1.6M;
                 }
 
-                conditioner = 0;
+                return 0;
             }
         }
 
