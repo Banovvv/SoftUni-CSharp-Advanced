@@ -3,7 +3,7 @@
     public class Bus : Vehicle
     {
         private bool people;
-        public Bus(decimal fuel, decimal fuelConsumption) : base(fuel, fuelConsumption)
+        public Bus(decimal fuel, decimal fuelConsumption, decimal tankCapacity) : base(fuel, fuelConsumption, tankCapacity)
         {
         }
 
@@ -20,10 +20,10 @@
             }
         }
 
-        public void DriveEmpty()
+        public void DriveEmpty(decimal kilometers)
         {
             people = false;
-            Drive();
+            Drive(kilometers);
         }
     }
 }

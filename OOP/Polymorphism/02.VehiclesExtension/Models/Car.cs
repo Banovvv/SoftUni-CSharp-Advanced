@@ -8,7 +8,7 @@ namespace _02.VehiclesExtension.Models
     {
         private readonly decimal conditioner = 0.9M;
 
-        public Car(decimal fuel, decimal fuelConsumption) : base(fuel, fuelConsumption)
+        public Car(decimal fuel, decimal fuelConsumption, decimal tankCapacity) : base(fuel, fuelConsumption, tankCapacity)
         {
         }
 

@@ -9,7 +9,7 @@ namespace _02.VehiclesExtension.Models
         private readonly decimal conditioner = 1.6M;
         private readonly decimal tankHoleSize = 0.95M;
 
-        public Truck(decimal fuel, decimal fuelConsumption) : base(fuel, fuelConsumption)
+        public Truck(decimal fuel, decimal fuelConsumption, decimal tankCapacity) : base(fuel, fuelConsumption, tankCapacity)
         {
         }
 

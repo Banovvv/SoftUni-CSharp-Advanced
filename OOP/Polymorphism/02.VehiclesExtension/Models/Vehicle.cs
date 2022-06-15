@@ -6,10 +6,11 @@ namespace _02.VehiclesExtension.Models
     {
         protected decimal fuel;
 
-        public Vehicle(decimal fuel, decimal fuelConsumption)
+        public Vehicle(decimal fuel, decimal fuelConsumption, decimal tankCapacity)
         {
             Fuel = fuel;
             FuelConsumption = fuelConsumption;
+            TankCapacity = tankCapacity;
         }
 
         public decimal Fuel
