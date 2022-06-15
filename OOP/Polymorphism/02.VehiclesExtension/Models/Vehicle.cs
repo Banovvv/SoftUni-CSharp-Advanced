@@ -8,9 +8,9 @@ namespace _02.VehiclesExtension.Models
 
         public Vehicle(decimal fuel, decimal fuelConsumption, decimal tankCapacity)
         {
-            Fuel = fuel;
             FuelConsumption = fuelConsumption;
             TankCapacity = tankCapacity;
+            Fuel = fuel;
         }
 
         public decimal Fuel
@@ -20,22 +20,21 @@ namespace _02.VehiclesExtension.Models
             {
                 if (value > TankCapacity)
                 {
-                    Console.WriteLine($"Cannot fit {value} fuel in the tank");
-                    Fuel = 0;
+                    fuel = 0;
                 }
                 else
                 {
-                    Fuel = value;
+                    fuel = value;
                 }
             }
         }
         public decimal FuelConsumption { get; protected set; }
         public decimal TankCapacity { get; protected set; }
-        protected abstract decimal Conditioner { get; }
+        protected abstract decimal Conditioner { get; set; }
 
         public virtual void Drive(decimal kilometers)
         {
-            if (Fuel - (FuelConsumption + Conditioner) * kilometers >= 0)
+            if (Fuel - (FuelConsumption + Conditioner) * kilometers > 0)
             {
                 Fuel -= (FuelConsumption + Conditioner) * kilometers;
                 Console.WriteLine($"{this.GetType().Name} travelled {kilometers} km");

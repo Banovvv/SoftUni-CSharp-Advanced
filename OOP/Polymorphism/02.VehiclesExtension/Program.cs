@@ -13,6 +13,7 @@ namespace _02.VehiclesExtension
 
             Car car = new Car(decimal.Parse(carParams[1]), decimal.Parse(carParams[2]), decimal.Parse(carParams[3]));
             Truck truck = new Truck(decimal.Parse(truckParams[1]), decimal.Parse(truckParams[2]), decimal.Parse(carParams[3]));
+            Bus bus = new Bus(decimal.Parse(busParams[1]), decimal.Parse(busParams[2]), decimal.Parse(busParams[3]));
 
             int numberOfCommands = int.Parse(Console.ReadLine());
 
@@ -34,6 +35,14 @@ namespace _02.VehiclesExtension
                     {
                         truck.Drive(param);
                     }
+                    else if (vehicle == "Bus")
+                    {
+                        bus.Drive(param);
+                    }
+                }
+                else if(command == "DriveEmpty")
+                {
+                    bus.DriveEmpty(param);
                 }
                 else if (command == "Refuel")
                 {
@@ -45,15 +54,16 @@ namespace _02.VehiclesExtension
                     {
                         truck.Refuel(param);
                     }
-                    else if (vehicle == "Truck")
+                    else if (vehicle == "Bus")
                     {
-                        truck.Refuel(param);
+                        bus.Refuel(param);
                     }
                 }
             }
 
             Console.WriteLine(car);
             Console.WriteLine(truck);
+            Console.WriteLine(bus);
         }
     }
 }
