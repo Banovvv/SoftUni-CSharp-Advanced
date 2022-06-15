@@ -3,7 +3,6 @@
     public class Bus : Vehicle
     {
         private bool people = true;
-        private decimal conditioner;
 
         public Bus(decimal fuel, decimal fuelConsumption, decimal tankCapacity) : base(fuel, fuelConsumption, tankCapacity)
         {
@@ -15,7 +14,7 @@
             {
                 if (people)
                 {
-                    return 1.6M;
+                    return 1.4M;
                 }
 
                 return 0;

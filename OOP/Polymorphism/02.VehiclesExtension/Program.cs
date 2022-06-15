@@ -12,7 +12,7 @@ namespace _02.VehiclesExtension
             string[] busParams = Console.ReadLine().Split();
 
             Car car = new Car(decimal.Parse(carParams[1]), decimal.Parse(carParams[2]), decimal.Parse(carParams[3]));
-            Truck truck = new Truck(decimal.Parse(truckParams[1]), decimal.Parse(truckParams[2]), decimal.Parse(carParams[3]));
+            Truck truck = new Truck(decimal.Parse(truckParams[1]), decimal.Parse(truckParams[2]), decimal.Parse(truckParams[3]));
             Bus bus = new Bus(decimal.Parse(busParams[1]), decimal.Parse(busParams[2]), decimal.Parse(busParams[3]));
 
             int numberOfCommands = int.Parse(Console.ReadLine());

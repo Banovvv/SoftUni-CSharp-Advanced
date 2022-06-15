@@ -34,7 +34,7 @@ namespace _02.VehiclesExtension.Models
 
         public void Drive(decimal kilometers)
         {
-            if (Fuel - (FuelConsumption + Conditioner) * kilometers > 0)
+            if (Fuel - (FuelConsumption + Conditioner) * kilometers >= 0)
             {
                 Fuel -= (FuelConsumption + Conditioner) * kilometers;
                 Console.WriteLine($"{this.GetType().Name} travelled {kilometers} km");
