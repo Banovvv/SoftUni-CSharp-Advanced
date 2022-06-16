@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _03.Raiding.Interfaces
+﻿namespace _03.Raiding.Interfaces
 {
     public interface IHeroFactory
     {

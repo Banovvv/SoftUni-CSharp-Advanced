@@ -15,7 +15,7 @@ namespace _03.Raiding
             List<ICaster> heroes = new List<ICaster>();
             HeroFactory factory = new HeroFactory();
 
-            while(heroes.Count != numberOfHeroes)
+            while (heroes.Count != numberOfHeroes)
             {
                 string name = Console.ReadLine();
                 string type = Console.ReadLine();
@@ -44,7 +44,7 @@ namespace _03.Raiding
 
             int heroesPower = heroes.Sum(x => x.Power);
 
-            if(heroesPower >= bossPower)
+            if (heroesPower >= bossPower)
             {
                 Console.WriteLine("Victory!");
             }

@@ -1,7 +1,5 @@
 ﻿using _03.Raiding.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace _03.Raiding.Models
 {
@@ -11,7 +9,7 @@ namespace _03.Raiding.Models
         {
             ICaster hero = null;
 
-            if(type == "Druid")
+            if (type == "Druid")
             {
                 hero = new Druid(name);
             }
