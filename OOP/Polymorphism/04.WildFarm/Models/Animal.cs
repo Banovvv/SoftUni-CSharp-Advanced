@@ -18,6 +18,8 @@ namespace _04.WildFarm.Models
         public double Weight { get; protected set; }
         public int FoodEaten { get; protected set; }
 
-        public abstract void MakeSound();
+        public abstract void Eat(int quantity);
+
+        public abstract void MakeSound(int quantity);
     }
 }
