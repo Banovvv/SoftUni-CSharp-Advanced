@@ -21,6 +21,7 @@ namespace _04.WildFarm.Models
             }
 
             Weight += quantity * WeightIncreaseFactor;
+            FoodEaten += quantity;
         }
 
         public override void MakeSound()

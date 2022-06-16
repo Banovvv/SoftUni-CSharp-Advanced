@@ -7,7 +7,7 @@ namespace _04.WildFarm.Models
     public class Dog : Mammal
     {
         private const double WeightIncreaseFactor = 0.40f;
-        private IList<string> AcceptedFood = new string[] { "Vegetable", "Fruit", "Meat", "Seeds" };
+        private IList<string> AcceptedFood = new string[] { "Meat" };
 
         public Dog(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
         {
@@ -21,6 +21,7 @@ namespace _04.WildFarm.Models
             }
 
             Weight += quantity * WeightIncreaseFactor;
+            FoodEaten += quantity;
         }
         public override void MakeSound()
         {
