@@ -6,7 +6,7 @@ namespace _04.WildFarm.Interfaces
 {
     public interface IAnimal
     {
-        void Eat(int quantity);
-        void MakeSound(int quantity);
+        void Eat(string foodType, int quantity);
+        void MakeSound();
     }
 }
