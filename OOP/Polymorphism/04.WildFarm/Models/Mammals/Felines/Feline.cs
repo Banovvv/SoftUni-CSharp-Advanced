@@ -12,5 +12,7 @@ namespace _04.WildFarm.Models
         }
 
         public string Breed { get; protected set; }
+
+        public override string ToString() => $"{GetType().Name} [{Name}, {Breed}, {Weight}, {LivingRegion}, {FoodEaten}]";
     }
 }

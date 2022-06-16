@@ -12,5 +12,7 @@ namespace _04.WildFarm.Models
         }
 
         public string LivingRegion { get; protected set; }
+
+        public override string ToString() => $"{GetType().Name} [{Name}, {Weight}, {LivingRegion}, {FoodEaten}]";
     }
 }

@@ -12,5 +12,7 @@ namespace _04.WildFarm.Models
         }
 
         public double WingSize { get; protected set; }
+
+        public override string ToString() => $"{GetType().Name} [{Name}, {WingSize}, {Weight}, {FoodEaten}]";
     }
 }
