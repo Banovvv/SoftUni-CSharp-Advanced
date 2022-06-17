@@ -8,7 +8,7 @@ namespace _02.EnterNumbers
         private static readonly int end = 100;
 
         static void Main(string[] args)
-        {         
+        {
             int[] numbers = new int[10];
 
             for (int i = 1; i <= 10; i++)
