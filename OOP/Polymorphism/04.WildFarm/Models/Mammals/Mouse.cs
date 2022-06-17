@@ -6,10 +6,10 @@ namespace _04.WildFarm.Models
 {
     public class Mouse : Mammal
     {
-        private const double WeightIncreaseFactor = 0.10f;
+        private const decimal WeightIncreaseFactor = 0.10M;
         private IList<string> AcceptedFood = new string[] { "Vegetable", "Fruit" };
 
-        public Mouse(string name, double weight, string livingRegion) : base(name, weight, livingRegion)
+        public Mouse(string name, decimal weight, string livingRegion) : base(name, weight, livingRegion)
         {
         }
 

@@ -27,7 +27,7 @@ namespace _04.WildFarm
 
                 string type = animalArgs[0];
                 string name = animalArgs[1];
-                double weight = double.Parse(animalArgs[2]);
+                decimal weight = decimal.Parse(animalArgs[2]);
 
                 switch (type)
                 {
@@ -51,7 +51,7 @@ namespace _04.WildFarm
                         }
                     case "Hen":
                         {
-                            double wingSize = double.Parse(animalArgs[3]);
+                            decimal wingSize = decimal.Parse(animalArgs[3]);
 
                             animals.Add(new Hen(name, weight, wingSize));
 
@@ -59,7 +59,7 @@ namespace _04.WildFarm
                         }
                     case "Owl":
                         {
-                            double wingSize = double.Parse(animalArgs[3]);
+                            decimal wingSize = decimal.Parse(animalArgs[3]);
 
                             animals.Add(new Owl(name, weight, wingSize));
 

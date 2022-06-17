@@ -6,10 +6,10 @@ namespace _04.WildFarm.Models
 {
     public class Hen : Bird
     {
-        private const double WeightIncreaseFactor = 0.35f;
+        private const decimal WeightIncreaseFactor = 0.35M;
         private IList<string> AcceptedFood = new string[] { "Vegetable", "Fruit", "Meat", "Seeds" };
 
-        public Hen(string name, double weight, double wingSize) : base(name, weight, wingSize)
+        public Hen(string name, decimal weight, decimal wingSize) : base(name, weight, wingSize)
         {
         }
 

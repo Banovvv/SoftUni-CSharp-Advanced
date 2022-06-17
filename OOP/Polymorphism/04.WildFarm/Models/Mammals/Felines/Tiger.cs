@@ -6,10 +6,10 @@ namespace _04.WildFarm.Models
 {
     public class Tiger : Feline
     {
-        private const double WeightIncreaseFactor = 1.00f;
+        private const decimal WeightIncreaseFactor = 1.00M;
         private IList<string> AcceptedFood = new string[] { "Meat" };
 
-        public Tiger(string name, double weight, string livingRegion, string breed) : base(name, weight, livingRegion, breed)
+        public Tiger(string name, decimal weight, string livingRegion, string breed) : base(name, weight, livingRegion, breed)
         {
         }
 
