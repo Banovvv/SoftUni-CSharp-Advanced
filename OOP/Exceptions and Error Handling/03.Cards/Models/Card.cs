@@ -38,6 +38,7 @@ namespace _03.Cards.Models
                 {
                     throw new InvalidCardException();
                 }
+
                 suit = GetSuit(value);
             }
         }
