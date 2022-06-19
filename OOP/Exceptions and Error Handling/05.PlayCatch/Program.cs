@@ -18,7 +18,7 @@ namespace _05.PlayCatch
 
                 try
                 {
-                    
+
                     if (command == "Replace")
                     {
                         int index = int.Parse(commandArgs[1]);
