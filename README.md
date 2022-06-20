@@ -140,7 +140,7 @@ My solutions to SoftUni's CSharp Advanced problems:
 3. [Cards](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/03.Cards)
 4. [Sum of Integers](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/04.SumOfIntegers)
 5. [Play Catch](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/05.PlayCatch)
-6. [Money Transactions]()
+6. [Money Transactions](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/06.MoneyTransactions)
 ### Reflection and Attributes
 1. [Command Pattern]()
 2. [Validation Attributes]()
