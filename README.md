@@ -130,10 +130,10 @@ My solutions to SoftUni's CSharp Advanced problems:
 8. [Collection Hierarchy](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Interfaces%20and%20Abstraction/08.CollectionHierarchy)
 9. [Explicit Interfaces](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Interfaces%20and%20Abstraction/09.ExplicitInterfaces)
 ### Polymorphism
-1. [Vehicles]()
-2. [Vehicles Extension]()
-3. [Raiding]()
-4. [Wild Farm]()
+1. [Vehicles](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Polymorphism/01.Vehicles)
+2. [Vehicles Extension](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Polymorphism/02.VehiclesExtension)
+3. [Raiding](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Polymorphism/03.Raiding)
+4. [Wild Farm](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Polymorphism/04.WildFarm)
 ### Exceptions and Error Handling
 1. [Square Root]()
 2. [Enter Numbers]()
