@@ -135,11 +135,11 @@ My solutions to SoftUni's CSharp Advanced problems:
 3. [Raiding](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Polymorphism/03.Raiding)
 4. [Wild Farm](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Polymorphism/04.WildFarm)
 ### Exceptions and Error Handling
-1. [Square Root]()
-2. [Enter Numbers]()
-3. [Cards]()
-4. [Sum of Integers]()
-5. [Play Catch]()
+1. [Square Root](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/01.SquareRoot)
+2. [Enter Numbers](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/02.EnterNumbers)
+3. [Cards](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/03.Cards)
+4. [Sum of Integers](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/04.SumOfIntegers)
+5. [Play Catch](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/05.PlayCatch)
 6. [Money Transactions]()
 ### Reflection and Attributes
 1. [Command Pattern]()
