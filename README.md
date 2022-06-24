@@ -142,8 +142,8 @@ My solutions to SoftUni's CSharp Advanced problems:
 5. [Play Catch](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/05.PlayCatch)
 6. [Money Transactions](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Exceptions%20and%20Error%20Handling/06.MoneyTransactions)
 ### Reflection and Attributes
-1. [Command Pattern]()
-2. [Validation Attributes]()
+1. [Command Pattern](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Reflection%20and%20Attributes/01.CommandPattern)
+2. [Validation Attributes](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Reflection%20and%20Attributes/02.ValidationAttributes)
 ### Unit Testing
 1. [Database]()
 2. [Extended Database]()
