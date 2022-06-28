@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _01.Database
+namespace Database
 {
     internal class Program
     {
