@@ -14,7 +14,6 @@ namespace FightingArena.Tests
         [SetUp]
         public void Initialize()
         {
-
             _arena = new Arena();
         }
         [Test]
