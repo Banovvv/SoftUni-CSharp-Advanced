@@ -23,6 +23,7 @@ namespace CarManager.Tests
             Assert.AreEqual(0, car.FuelAmount);
         }
 
+        #region Setter Tests
         [TestCase("", "Niva", 15.5, 80)]
         [TestCase(null, "Model X", 0.1, 0.1)]
         public void ConstructorShouldThrowExceptionWithInvalidMake(string make, string model, double fuelConsumption, double fuelCapacity)
@@ -50,5 +51,39 @@ namespace CarManager.Tests
         {
             Assert.Throws<ArgumentException>(() => new Car(make, model, fuelConsumption, fuelCapacity), "Fuel capacity cannot be zero or negative!");
         }
+        #endregion
+
+        #region Refuel Tests
+        [TestCase(20)]
+        [TestCase(80)]
+        public void RefuelShouldWorkWithValidParameters(double amount)
+        {
+            Car car = new Car("Lada", "Niva", 15.5, 80);
+            car.Refuel(amount);
+
+            Assert.AreEqual(amount, car.FuelAmount);
+
+        }
+
+        [TestCase(100)]
+        [TestCase(1000)]
+        public void RefuelShouldCorrectAmountIfOverFuelCapacity(double amount)
+        {
+            Car car = new Car("Lada", "Niva", 15.5, 80);
+            car.Refuel(amount);
+
+            Assert.AreEqual(car.FuelAmount, car.FuelCapacity);
+
+        }
+
+        [TestCase(0)]
+        [TestCase(-1)]
+        public void RefuelShouldThrowExceptionWithInvalidParameters(double amount)
+        {
+            Car car = new Car("Lada", "Niva", 15.5, 80);
+
+            Assert.Throws<ArgumentException>(() => car.Refuel(amount), "Fuel amount cannot be zero or negative!");
+        }
+        #endregion
     }
 }
