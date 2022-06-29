@@ -62,7 +62,6 @@ namespace CarManager.Tests
             car.Refuel(amount);
 
             Assert.AreEqual(amount, car.FuelAmount);
-
         }
 
         [TestCase(100)]
@@ -73,7 +72,6 @@ namespace CarManager.Tests
             car.Refuel(amount);
 
             Assert.AreEqual(car.FuelAmount, car.FuelCapacity);
-
         }
 
         [TestCase(0)]
@@ -83,6 +81,31 @@ namespace CarManager.Tests
             Car car = new Car("Lada", "Niva", 15.5, 80);
 
             Assert.Throws<ArgumentException>(() => car.Refuel(amount), "Fuel amount cannot be zero or negative!");
+        }
+        #endregion
+
+        #region Drive Tests
+        [TestCase(60, 50)]
+        [TestCase(80, 30)]
+        public void DriveShouldWorkWithValidParameters(double amount, double distance)
+        {
+            Car car = new Car("Lada", "Niva", 20, 80);
+            car.Refuel(amount);
+            car.Drive(distance);
+
+            double fuelNeeded = (distance / 100) * car.FuelConsumption;
+
+            Assert.AreEqual(amount - fuelNeeded, car.FuelAmount);
+        }
+
+        [TestCase(10, 150)]
+        [TestCase(10, 300)]
+        public void DriveShouldThrowExceptionWhenFuelIsNotEnough(double amount, double distance)
+        {
+            Car car = new Car("Lada", "Niva", 20, 80);
+            car.Refuel(amount);
+
+            Assert.Throws<InvalidOperationException>(() => car.Drive(distance), "You don't have enough fuel to drive!");
         }
         #endregion
     }
