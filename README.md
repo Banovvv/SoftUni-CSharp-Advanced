@@ -145,9 +145,9 @@ My solutions to SoftUni's CSharp Advanced problems:
 1. [Command Pattern](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Reflection%20and%20Attributes/01.CommandPattern)
 2. [Validation Attributes](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Reflection%20and%20Attributes/02.ValidationAttributes)
 ### Unit Testing
-1. [Database]()
-2. [Extended Database]()
-3. [Car Manager]()
+1. [Database](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Unit%20Testing/01.Database)
+2. [Extended Database](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Unit%20Testing/02.%20Extended%20Database)
+3. [Car Manager](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Unit%20Testing/03.%20Car%20Manager)
 4. [Fighting Arena]()     
 ### Mocking and Test Driven Development
 1. [Fake Axe and Dummy]()
