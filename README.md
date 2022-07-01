@@ -151,7 +151,10 @@ My solutions to SoftUni's CSharp Advanced problems:
 4. [Fighting Arena]()     
 ### Mocking and Test Driven Development
 1. [Fake Axe and Dummy]()
- 
+### Design Patterns
+1. [Prototype Pattern]()
+2. [Composite Pattern]()
+4. [Template Pattern]()
     </td>
   </tr>
 </table>
