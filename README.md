@@ -78,7 +78,7 @@ My solutions to SoftUni's CSharp Advanced problems:
 1. [Generic Box of String](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/01.GenericBoxOfString)
 2. [Generic Box of Ingeter](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/02.GenericBoxOfInteger)
 3. [Generic Swap Method String](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/03.GenericSwapMethodString)
-4. [GenericSwapMethod Integer](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/04.GenericSwapMethodInteger)
+4. [Generic Swap Method Integer](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/04.GenericSwapMethodInteger)
 5. [Generic Count Method String](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/05.GenericCountMethodString)
 6. [Generic Count Method Double](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/06.GenericCountMethodDouble)
 7. [Tuple](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/Advanced/Generics/07.Tuple)
