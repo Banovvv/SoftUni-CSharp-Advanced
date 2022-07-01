@@ -2,7 +2,7 @@
 
 namespace _01.PrototypеPattern.Models
 {
-    public partial class SandwichMenu
+    public class SandwichMenu
     {
         public SandwichMenu()
         {

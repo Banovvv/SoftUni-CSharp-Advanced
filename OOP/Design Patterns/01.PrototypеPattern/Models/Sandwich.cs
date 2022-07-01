@@ -4,11 +4,6 @@ namespace _01.PrototypеPattern.Models
 {
     public class Sandwich : SandwichPrototype
     {
-        private string bread;
-        private string meat;
-        private string cheese;
-        private string veggies;
-
         public Sandwich(string bread, string meat, string cheese, string veggies)
         {
             Bread = bread;
@@ -17,58 +12,10 @@ namespace _01.PrototypеPattern.Models
             Veggies = veggies;
         }
 
-        public string Bread
-        {
-            get => bread;
-            private set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException();
-                }
-
-                bread = value;
-            }
-        }
-        public string Meat
-        {
-            get => meat;
-            private set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException();
-                }
-
-                meat = value;
-            }
-        }
-        public string Cheese
-        {
-            get => cheese;
-            private set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException();
-                }
-
-                cheese = value;
-            }
-        }
-        public string Veggies
-        {
-            get => veggies;
-            private set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException();
-                }
-
-                veggies = value;
-            }
-        }
+        public string Bread { get; private set; }
+        public string Meat { get; private set; }
+        public string Cheese { get; private set; }
+        public string Veggies { get; private set; }
 
         public override SandwichPrototype Clone()
         {
