@@ -6,5 +6,6 @@ namespace FakeAxeAndDummy.Interfaces
 {
     public interface ITarget
     {
+        public int Health { get; }
     }
 }
