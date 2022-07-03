@@ -1,7 +1,5 @@
 ﻿using FakeAxeAndDummy.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FakeAxeAndDummy.Models
 {
@@ -21,6 +19,11 @@ namespace FakeAxeAndDummy.Models
             get => damage;
             private set
             {
+                if (value <= 0 || value > 50)
+                {
+                    throw new ArgumentException();
+                }
+
                 damage = value;
             }
         }
@@ -30,6 +33,11 @@ namespace FakeAxeAndDummy.Models
             get => durability;
             private set
             {
+                if (value <= 0 || value > 100)
+                {
+                    throw new ArgumentException();
+                }
+
                 durability = value;
             }
         }
