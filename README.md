@@ -152,7 +152,7 @@ My solutions to SoftUni's CSharp Advanced problems:
 ### Mocking and Test Driven Development
 1. [Fake Axe and Dummy]()
 ### Design Patterns
-1. [Prototype Pattern]()
+1. [Prototype Pattern](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Design%20Patterns/01.PrototypеPattern)
 2. [Composite Pattern]()
 4. [Template Pattern]()
     </td>
