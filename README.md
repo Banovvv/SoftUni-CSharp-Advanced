@@ -154,7 +154,7 @@ My solutions to SoftUni's CSharp Advanced problems:
 ### Design Patterns
 1. [Prototype Pattern](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Design%20Patterns/01.PrototypеPattern)
 2. [Composite Pattern]()
-4. [Template Pattern]()
+4. [Template Pattern](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Design%20Patterns/03.TemplatePattern)
     </td>
   </tr>
 </table>
