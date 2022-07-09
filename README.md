@@ -1,5 +1,5 @@
 # SoftUni-CSharp-Advanced
-My solutions to SoftUni's Advanced CSharp problems:
+My solutions to SoftUni's Advanced CSharp problems (including OOP):
 
 <table style="width:100%">
   <tr>
