@@ -7,6 +7,10 @@ namespace FakeAxeAndDummy.Models
     {
         private int damage;
         private int durability;
+        private readonly int minDamage = 0;
+        private readonly int maxDamage = 50;
+        private readonly int minDurability = 0;
+        private readonly int maxDurability = 100;
 
         public Axe(int damage, int durability)
         {
@@ -19,9 +23,9 @@ namespace FakeAxeAndDummy.Models
             get => damage;
             private set
             {
-                if (value <= 0 || value > 50)
+                if (value <= minDamage || value > maxDamage)
                 {
-                    throw new ArgumentException();
+                    throw new ArgumentException($"Weapon damage should be between {minDamage} and {maxDamage}!");
                 }
 
                 damage = value;
@@ -35,7 +39,7 @@ namespace FakeAxeAndDummy.Models
             {
                 if (value <= 0 || value > 100)
                 {
-                    throw new ArgumentException();
+                    throw new ArgumentException($"Weapon damage should be between {minDurability} and {maxDurability}!");
                 }
 
                 durability = value;
