@@ -5,8 +5,10 @@ namespace FakeAxeAndDummy.Models
 {
     public class Hero : ITarget
     {
-        private IWeapon weapon;
         private int health;
+        private IWeapon weapon;
+        private readonly int minHealth = 0;
+        private readonly int maxHealth = 100;
 
         public Hero(IWeapon weapon, int health)
         {
@@ -19,9 +21,9 @@ namespace FakeAxeAndDummy.Models
             get => health;
             private set
             {
-                if (value <= 0 || value > 100)
+                if (value <= minHealth || value > maxHealth)
                 {
-                    throw new ArgumentException("Health must be > 0 and <= 100");
+                    throw new ArgumentException($"Health must be between {minHealth} and {maxHealth}!");
                 }
 
                 health = value;
