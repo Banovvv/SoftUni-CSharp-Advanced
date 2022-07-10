@@ -3,7 +3,7 @@ using System;
 
 namespace FakeAxeAndDummy.Models
 {
-    public class Hero : ITarget
+    public class Hero : IHero, ITarget
     {
         private int health;
         private IWeapon weapon;
@@ -42,6 +42,11 @@ namespace FakeAxeAndDummy.Models
 
                 weapon = value;
             }
+        }
+
+        public void Attack(ITarget target)
+        {
+            throw new NotImplementedException();
         }
     }
 }
