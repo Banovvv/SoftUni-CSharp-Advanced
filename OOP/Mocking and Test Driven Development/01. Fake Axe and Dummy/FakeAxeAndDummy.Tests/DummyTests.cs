@@ -28,5 +28,17 @@ namespace FakeAxeAndDummy.Tests
         {
             Assert.Throws<ArgumentException>(() => new Dummy(health));
         }
+
+        [TestCase(1)]
+        [TestCase(10)]
+        [TestCase(15)]
+        [TestCase(55)]
+        [TestCase(99)]
+        public void DummyTakeDamageShouldWorkWithValidParameters(int damage)
+        {
+            ITarget dummy = new Dummy(100);
+            dummy.TakeDamage(damage);
+            Assert.AreEqual(100 - damage, dummy.Health);
+        }
     }
 }
