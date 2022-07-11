@@ -27,5 +27,10 @@ namespace FakeAxeAndDummy.Models
                 health = value;
             }
         }
+
+        public void TakeDamage(int damage)
+        {
+            this.Health -= damage;
+        }
     }
 }

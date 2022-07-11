@@ -46,7 +46,20 @@ namespace FakeAxeAndDummy.Models
 
         public void Attack(ITarget target)
         {
-            throw new NotImplementedException();
+            if(target.Health - this.Weapon.Damage > 0)
+            {
+                target.TakeDamage(this.Weapon.Damage);
+                Console.WriteLine($"You dealth {this.Weapon.Damage} damage to your target, its health is now rediced to {target.Health}");
+            }
+            else
+            {
+                Console.WriteLine($"You killed your target!");
+            }
+        }
+
+        public void TakeDamage(int damage)
+        {
+            this.Health -= damage;
         }
     }
 }
