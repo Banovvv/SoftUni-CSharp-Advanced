@@ -1,3 +1,4 @@
+using FakeAxeAndDummy.Interfaces;
 using FakeAxeAndDummy.Models;
 using NUnit.Framework;
 using System;
@@ -14,7 +15,7 @@ namespace FakeAxeAndDummy.Tests
         [TestCase(100)]
         public void DummyInitiliazationShouldWorkWithValidParameters(int health)
         {
-            Dummy dummy = new Dummy(health);
+            ITarget dummy = new Dummy(health);
             Assert.AreEqual(health, dummy.Health);
         }
 
