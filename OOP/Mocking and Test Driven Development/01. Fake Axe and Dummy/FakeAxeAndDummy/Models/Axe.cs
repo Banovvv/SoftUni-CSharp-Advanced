@@ -21,7 +21,7 @@ namespace FakeAxeAndDummy.Models
         public int Damage
         {
             get => damage;
-            private set
+            set
             {
                 if (value <= minDamage || value > maxDamage)
                 {
@@ -35,7 +35,7 @@ namespace FakeAxeAndDummy.Models
         public int Durability
         {
             get => durability;
-            private set
+            set
             {
                 if (value <= 0 || value > 100)
                 {

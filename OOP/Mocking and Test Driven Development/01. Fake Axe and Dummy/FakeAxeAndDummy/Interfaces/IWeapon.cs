@@ -2,7 +2,7 @@
 {
     public interface IWeapon
     {
-        public int Damage { get; }
-        public int Durability { get; }
+        public int Damage { get; set; }
+        public int Durability { get; set; }
     }
 }
