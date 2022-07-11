@@ -19,5 +19,25 @@ namespace FakeAxeAndDummy.Tests
             Assert.AreEqual(damage, axe.Damage);
             Assert.AreEqual(durability, axe.Durability);
         }
+
+        [TestCase(0)]
+        [TestCase(-5)]
+        [TestCase(-25)]
+        [TestCase(51)]
+        [TestCase(500)]
+        public void AxeInitializationShouldNotWorkWithInvalidDamageParameter(int damage)
+        {
+            Assert.Throws<ArgumentException>(() => new Axe(damage, 100));
+        }
+
+        [TestCase(0)]
+        [TestCase(-5)]
+        [TestCase(-250)]
+        [TestCase(101)]
+        [TestCase(1000)]
+        public void AxeInitializationShouldNotWorkWithInvalidDurabilityParameter(int durability)
+        {
+            Assert.Throws<ArgumentException>(() => new Axe(50, durability));
+        }
     }
 }
