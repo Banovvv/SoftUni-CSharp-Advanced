@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Formula1.Models.Contracts;
+using System;
 
 namespace Formula1.Models
 {
-    public abstract class FormulaOneCar
+    public abstract class FormulaOneCar : IFormulaOneCar
     {
         private string model;
         private int horsepower;

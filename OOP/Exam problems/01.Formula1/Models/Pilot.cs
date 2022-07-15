@@ -3,7 +3,7 @@ using System;
 
 namespace Formula1.Models
 {
-    public class Pilot
+    public class Pilot : IPilot
     {
         private string fullName;
         private IFormulaOneCar car;
