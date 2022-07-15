@@ -1,10 +1,28 @@
-﻿using System;
+﻿using Formula1.Models.Contracts;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Formula1.Repositories
 {
-    internal class PilotRepository
+    public class PilotRepository
     {
+        private readonly ICollection<IPilot> models;
+
+        public ICollection<IPilot> Models => models;
+
+        public void Add(IPilot pilot)
+        {
+            models.Add(pilot);
+        }
+
+        public bool Remove(IPilot pilot)
+        {
+            return models.Remove(pilot);
+        }
+
+        public IPilot FindByName(string fullName)
+        {
+            return models.Where(x => x.FullName == fullName).FirstOrDefault();
+        }
     }
 }
