@@ -56,5 +56,8 @@ namespace Formula1.Models
         {
             NumberOfWins++;
         }
+
+        public override string ToString() => $"Pilot {FullName} has {NumberOfWins} wins.";
+
     }
 }
