@@ -1,5 +1,6 @@
 ﻿using Formula1.Core.Contracts;
 using Formula1.Models;
+using Formula1.Models.Contracts;
 using Formula1.Repositories;
 using System;
 using System.Linq;
@@ -14,7 +15,23 @@ namespace Formula1.Core
 
         public string AddCarToPilot(string pilotName, string carModel)
         {
-            throw new NotImplementedException();
+            IPilot currentPilot = pilotRepository.Models.Where(x=> x.FullName == pilotName).FirstOrDefault();
+
+            if (currentPilot == null || currentPilot.CanRace)
+            {
+                throw new InvalidOperationException($"Pilot {pilotName} does not exist or has a car.");
+            }
+
+            IFormulaOneCar currentCar = carRepository.Models.Where(x=>x.Model==carModel).FirstOrDefault();
+
+            if(currentCar == null)
+            {
+                throw new NullReferenceException($"Car {carModel} does not exist.");
+            }
+
+            currentPilot.AddCar(currentCar);
+
+            return $"Pilot {pilotName} will drive a {currentCar.GetType()} {currentCar.Model} car.";
         }
 
         public string AddPilotToRace(string raceName, string pilotFullName)
