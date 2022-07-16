@@ -1,11 +1,8 @@
 ﻿using Formula1.Core.Contracts;
 using Formula1.Models;
-using Formula1.Models.Contracts;
 using Formula1.Repositories;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Formula1.Core
 {
@@ -27,17 +24,17 @@ namespace Formula1.Core
 
         public string CreateCar(string type, string model, int horsepower, double engineDisplacement)
         {
-            if(carRepository == null)
+            if (carRepository == null)
             {
                 carRepository = new FormulaOneCarRepository();
             }
 
-            if(carRepository.Models.Where(x=>x.Model == model).Any())
+            if (carRepository.Models.Where(x => x.Model == model).Any())
             {
                 throw new InvalidOperationException($"Formula one car {model} is already created.");
             }
 
-            if(type != "Ferrari")
+            if (type != "Ferrari")
             {
                 carRepository.Models.Add(new Ferrari(model, horsepower, engineDisplacement));
             }
@@ -55,12 +52,12 @@ namespace Formula1.Core
 
         public string CreatePilot(string fullName)
         {
-            if(pilotRepository == null)
+            if (pilotRepository == null)
             {
                 pilotRepository = new PilotRepository();
             }
 
-            if(pilotRepository.Models.Where(x=>x.FullName == fullName).Any())
+            if (pilotRepository.Models.Where(x => x.FullName == fullName).Any())
             {
                 throw new InvalidOperationException($"Pilot {fullName} is already created.");
             }
