@@ -113,6 +113,8 @@ namespace Formula1.Core
                 throw new InvalidOperationException($"Race {raceName} is already created.");
             }
 
+            raceRepository.Models.Add(new Race(raceName, numberOfLaps));
+
             return $"Race {raceName} is created.";
         }
 
@@ -159,16 +161,16 @@ namespace Formula1.Core
                 throw new InvalidOperationException($"Can not execute race {raceName}.");
             }
 
-            var topPilots = currentRace.Pilots.OrderBy(x => x.Car.RaceScoreCalculator(currentRace.NumberOfLaps)).ToList();
+            var topPilots = currentRace.Pilots.OrderByDescending(x => x.Car.RaceScoreCalculator(currentRace.NumberOfLaps)).ToList();
 
             StringBuilder sb = new StringBuilder();
+
+            topPilots[0].WinRace();
+            currentRace.TookPlace = true;
 
             sb.AppendLine($"Pilot {topPilots[0].FullName} wins the {raceName} race.");
             sb.AppendLine($"Pilot {topPilots[1].FullName} is second in the {raceName} race.");
             sb.AppendLine($"Pilot {topPilots[2].FullName} is third in the {raceName} race.");
-
-            topPilots[0].WinRace();
-            currentRace.TookPlace = true;
 
             return sb.ToString().Trim();
         }

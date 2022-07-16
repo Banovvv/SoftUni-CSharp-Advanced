@@ -8,6 +8,11 @@ namespace Formula1.Repositories
     {
         private readonly ICollection<IPilot> models;
 
+        public PilotRepository()
+        {
+            models = new List<IPilot>();
+        }
+
         public ICollection<IPilot> Models => models;
 
         public void Add(IPilot pilot)

@@ -5,16 +5,21 @@ using System.Text;
 
 namespace Formula1.Models
 {
-    public class Race
+    public class Race : IRace
     {
         private string raceName;
         private int numberOfLaps;
+
+        public Race()
+        {
+        }
 
         public Race(string raceName, int numberOfLaps)
         {
             RaceName = raceName;
             NumberOfLaps = numberOfLaps;
             TookPlace = false;
+            Pilots = new List<IPilot>();
         }
 
         public string RaceName
@@ -45,7 +50,7 @@ namespace Formula1.Models
             }
         }
 
-        public bool TookPlace { get; private set; }
+        public bool TookPlace { get; set; }
 
         public ICollection<IPilot> Pilots { get; private set; }
 

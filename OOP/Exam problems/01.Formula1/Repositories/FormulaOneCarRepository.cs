@@ -8,6 +8,11 @@ namespace Formula1.Repositories
     {
         private readonly ICollection<IFormulaOneCar> models;
 
+        public FormulaOneCarRepository()
+        {
+            models = new List<IFormulaOneCar>();
+        }
+
         public ICollection<IFormulaOneCar> Models => models;
 
         public void Add(IFormulaOneCar car)
