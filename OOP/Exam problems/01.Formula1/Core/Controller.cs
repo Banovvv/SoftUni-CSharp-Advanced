@@ -4,6 +4,7 @@ using Formula1.Models.Contracts;
 using Formula1.Repositories;
 using System;
 using System.Linq;
+using System.Text;
 
 namespace Formula1.Core
 {
@@ -127,7 +128,35 @@ namespace Formula1.Core
 
         public string StartRace(string raceName)
         {
-            throw new NotImplementedException();
+            IRace currentRace = raceRepository.FindByName(raceName);
+
+            if (currentRace == null)
+            {
+                throw new NullReferenceException($"Race {raceName} does not exist.");
+            }
+
+            if (currentRace.Pilots.Count() < 3)
+            {
+                throw new InvalidOperationException($"Race {raceName} cannot start with less than three participants.");
+            }
+
+            if (currentRace.TookPlace)
+            {
+                throw new InvalidOperationException($"Can not execute race {raceName}.");
+            }
+
+            var topPilots = currentRace.Pilots.OrderBy(x => x.Car.RaceScoreCalculator(currentRace.NumberOfLaps)).ToList();
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($"Pilot {topPilots[0].FullName} wins the {raceName} race.");
+            sb.AppendLine($"Pilot {topPilots[1].FullName} is second in the {raceName} race.");
+            sb.AppendLine($"Pilot {topPilots[2].FullName} is third in the {raceName} race.");
+
+            topPilots[0].WinRace();
+            currentRace.TookPlace = true;
+
+            return sb.ToString().Trim();
         }
     }
 }

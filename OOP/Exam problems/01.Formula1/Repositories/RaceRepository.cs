@@ -8,6 +8,11 @@ namespace Formula1.Repositories
     {
         private readonly ICollection<IRace> models;
 
+        public RaceRepository()
+        {
+            models = new List<IRace>();
+        }
+
         public ICollection<IRace> Models => models;
 
         public void Add(IRace race)
