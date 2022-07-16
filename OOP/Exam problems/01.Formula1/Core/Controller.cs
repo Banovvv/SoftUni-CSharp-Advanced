@@ -15,16 +15,16 @@ namespace Formula1.Core
 
         public string AddCarToPilot(string pilotName, string carModel)
         {
-            IPilot currentPilot = pilotRepository.Models.Where(x=> x.FullName == pilotName).FirstOrDefault();
+            IPilot currentPilot = pilotRepository.Models.Where(x => x.FullName == pilotName).FirstOrDefault();
 
             if (currentPilot == null || currentPilot.CanRace)
             {
                 throw new InvalidOperationException($"Pilot {pilotName} does not exist or has a car.");
             }
 
-            IFormulaOneCar currentCar = carRepository.Models.Where(x=>x.Model==carModel).FirstOrDefault();
+            IFormulaOneCar currentCar = carRepository.Models.Where(x => x.Model == carModel).FirstOrDefault();
 
-            if(currentCar == null)
+            if (currentCar == null)
             {
                 throw new NullReferenceException($"Car {carModel} does not exist.");
             }
@@ -36,7 +36,23 @@ namespace Formula1.Core
 
         public string AddPilotToRace(string raceName, string pilotFullName)
         {
-            throw new NotImplementedException();
+            IRace currentRace = raceRepository.Models.Where(x => x.RaceName == raceName).FirstOrDefault();
+
+            if (currentRace == null)
+            {
+                throw new NullReferenceException($"Race {raceName} does not exist.");
+            }
+
+            IPilot currentPilot = pilotRepository.Models.Where(x => x.FullName == pilotFullName).FirstOrDefault();
+
+            if (currentPilot == null || !currentPilot.CanRace || currentRace.Pilots.Where(x => x.FullName == pilotFullName).Any())
+            {
+                throw new InvalidOperationException($"Can not add pilot {pilotFullName} to the race.");
+            }
+
+            currentRace.AddPilot(currentPilot);
+
+            return $"Pilot {pilotFullName} is added to the {raceName} race.";
         }
 
         public string CreateCar(string type, string model, int horsepower, double engineDisplacement)
@@ -91,7 +107,7 @@ namespace Formula1.Core
                 raceRepository = new RaceRepository();
             }
 
-            if (raceRepository.Models.Where(x=>x.RaceName == raceName).Any())
+            if (raceRepository.Models.Where(x => x.RaceName == raceName).Any())
             {
                 throw new InvalidOperationException($"Race {raceName} is already created.");
             }
