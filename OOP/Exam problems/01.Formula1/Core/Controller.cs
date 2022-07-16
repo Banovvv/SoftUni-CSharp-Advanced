@@ -32,7 +32,7 @@ namespace Formula1.Core
 
             currentPilot.AddCar(currentCar);
 
-            return $"Pilot {pilotName} will drive a {currentCar.GetType()} {currentCar.Model} car.";
+            return $"Pilot {pilotName} will drive a {currentCar.GetType().Name} {currentCar.Model} car.";
         }
 
         public string AddPilotToRace(string raceName, string pilotFullName)
