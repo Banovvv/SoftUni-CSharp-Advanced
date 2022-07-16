@@ -122,12 +122,12 @@ namespace Formula1.Core
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach(var pilot in pilotRepository.Models.OrderByDescending(x => x.NumberOfWins))
+            foreach (var pilot in pilotRepository.Models.OrderByDescending(x => x.NumberOfWins))
             {
                 sb.AppendLine(pilot.ToString());
             }
 
-           return sb.ToString().Trim();
+            return sb.ToString().Trim();
         }
 
         public string RaceReport()
