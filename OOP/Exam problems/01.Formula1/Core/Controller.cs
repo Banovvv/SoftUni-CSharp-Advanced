@@ -172,10 +172,5 @@ namespace Formula1.Core
 
             return sb.ToString().Trim();
         }
-
-        public void Exit()
-        {
-            Environment.Exit(0);
-        }
     }
 }
