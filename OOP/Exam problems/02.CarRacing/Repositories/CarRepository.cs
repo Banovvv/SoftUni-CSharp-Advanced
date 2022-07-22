@@ -8,10 +8,11 @@ namespace CarRacing.Repositories
 {
     public class CarRepository : IRepository<ICar>
     {
-        private List<ICar> models = new List<ICar>();
+        private List<ICar> models;
 
         public CarRepository()
         {
+            models = new List<ICar>();
         }
 
         public IReadOnlyCollection<ICar> Models => models.AsReadOnly();
