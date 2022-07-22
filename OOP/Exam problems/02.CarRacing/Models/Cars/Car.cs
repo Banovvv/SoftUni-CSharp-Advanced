@@ -108,7 +108,12 @@ namespace CarRacing.Models.Cars
 
         public void Drive()
         {
-            throw new NotImplementedException();
+            FuelAvailable -= FuelConsumptionPerRace;
+
+            if (GetType().Name == "TunedCar")
+            {
+                HorsePower = (int)Math.Round(HorsePower - (HorsePower * 0.03), 0, MidpointRounding.AwayFromZero);
+            }
         }
     }
 }
