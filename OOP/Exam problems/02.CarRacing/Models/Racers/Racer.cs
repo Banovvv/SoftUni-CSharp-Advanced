@@ -13,6 +13,14 @@ namespace CarRacing.Models.Racers
         private readonly int drivingExperienceMaxValue = 100;
         private ICar car;
 
+        public Racer(string username, string racingBehavior, int drivingExperience, ICar car)
+        {
+            Username = username;
+            RacingBehavior = racingBehavior;
+            DrivingExperience = drivingExperience;
+            Car = car;
+        }
+
         public string Username
         {
             get => username; protected set
@@ -70,12 +78,28 @@ namespace CarRacing.Models.Racers
 
         public bool IsAvailable()
         {
-            throw new NotImplementedException();
+            if (car.FuelAvailable - car.FuelConsumptionPerRace < 0)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public void Race()
         {
-            throw new NotImplementedException();
+            // Drive the car
+            car.Drive();
+
+            // Increase XP
+            if (GetType().Name == "ProfessionalRacer")
+            {
+                DrivingExperience += 10;
+            }
+            else if (GetType().Name == "StreetRacer")
+            {
+                DrivingExperience += 5;
+            }
         }
     }
 }
