@@ -1,6 +1,7 @@
 ﻿using CarRacing.Models.Cars.Contracts;
 using CarRacing.Models.Racers.Contracts;
 using System;
+using System.Text;
 
 namespace CarRacing.Models.Racers
 {
@@ -100,6 +101,18 @@ namespace CarRacing.Models.Racers
             {
                 DrivingExperience += 5;
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($"{GetType().Name}: {Username}");
+            sb.AppendLine($"--Driving behavior: {RacingBehavior}");
+            sb.AppendLine($"--Driving experience: {DrivingExperience}");
+            sb.AppendLine($"--Car: {Car.Make} {Car.Model} ({Car.VIN})");
+
+            return sb.ToString().Trim();
         }
     }
 }

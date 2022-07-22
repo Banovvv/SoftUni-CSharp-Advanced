@@ -22,6 +22,9 @@ namespace CarRacing.Models.Maps
                 return $"{racerOne.Username} wins the race! {racerTwo.Username} was not available to race!";
             }
 
+            racerOne.Race();
+            racerTwo.Race();
+
             return $"{racerOne.Username} has just raced against {racerTwo.Username}! {GetWinner(racerOne, racerTwo)} is the winner!";
         }
 
