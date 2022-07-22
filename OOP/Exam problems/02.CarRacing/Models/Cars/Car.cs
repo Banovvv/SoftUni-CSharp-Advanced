@@ -17,6 +17,11 @@ namespace CarRacing.Models.Cars
             get => make;
             protected set
             {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Car make cannot be null or empty.");
+                }
+
                 make = value;
             }
         }
@@ -26,6 +31,11 @@ namespace CarRacing.Models.Cars
             get => model;
             protected set
             {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Car model cannot be null or empty.");
+                }
+
                 model = value;
             }
         }
@@ -35,6 +45,11 @@ namespace CarRacing.Models.Cars
             get => vin;
             protected set
             {
+                if (value.Length != 17)
+                {
+                    throw new ArgumentException("Car VIN must be exactly 17 characters long.");
+                }
+
                 vin = value;
             }
         }
@@ -44,6 +59,11 @@ namespace CarRacing.Models.Cars
             get => horsePower;
             protected set
             {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Horse power cannot be below 0.");
+                }
+
                 horsePower = value;
             }
         }
@@ -53,6 +73,11 @@ namespace CarRacing.Models.Cars
             get => fuelAvailable;
             protected set
             {
+                if (value < 0)
+                {
+                    value = 0;
+                }
+
                 fuelAvailable = value;
             }
         }
@@ -62,6 +87,11 @@ namespace CarRacing.Models.Cars
             get => fuelConsumptionPerRace;
             protected set
             {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Fuel consumption cannot be below 0.");
+                }
+
                 fuelConsumptionPerRace = value;
             }
         }
