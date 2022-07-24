@@ -1,7 +1,5 @@
 ﻿using _02.Composite.Contracts;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace _02.Composite.Models
 {
@@ -11,21 +9,29 @@ namespace _02.Composite.Models
 
         public CompositeGift(string name, int price) : base(name, price)
         {
+            _gifts = new List<GiftBox>();
         }
 
         public void Add(GiftBox gift)
         {
-            throw new NotImplementedException();
+            _gifts.Add(gift);
         }
 
         public void Remove(GiftBox gift)
         {
-            throw new NotImplementedException();
+            _gifts.Remove(gift);
         }
 
         public override int CalculateTotalPrice()
         {
-            throw new NotImplementedException();
+            int totalPrice = 0;
+
+            foreach (var gift in _gifts)
+            {
+                totalPrice += gift.CalculateTotalPrice();
+            }
+
+            return totalPrice;
         }
     }
 }
