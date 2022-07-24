@@ -5,6 +5,6 @@ namespace _02.Composite.Contracts
     public interface IGiftOperations
     {
         void Add(GiftBox gift);
-        void Remoce(GiftBox gift);
+        void Remove(GiftBox gift);
     }
 }
