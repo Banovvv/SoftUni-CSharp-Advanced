@@ -7,9 +7,12 @@
 
         public GiftBox(string name, int price)
         {
-            this.name = name;
-            this.price = price;
+            Name = name;
+            Price = price;
         }
+
+        public string Name { get => name; protected set { name = value; } }
+        public int Price { get => price; protected set { price = value; } }
 
         public abstract int CalculateTotalPrice();
     }
