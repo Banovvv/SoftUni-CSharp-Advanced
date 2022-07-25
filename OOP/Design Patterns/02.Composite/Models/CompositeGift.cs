@@ -1,4 +1,5 @@
 ﻿using _02.Composite.Contracts;
+using System;
 using System.Collections.Generic;
 
 namespace _02.Composite.Models
@@ -24,6 +25,8 @@ namespace _02.Composite.Models
 
         public override int CalculateTotalPrice()
         {
+            Console.WriteLine($"{Name} contains the following products with prices:");
+
             int totalPrice = 0;
 
             foreach (var gift in _gifts)
