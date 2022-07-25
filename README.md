@@ -153,7 +153,7 @@ My solutions to SoftUni's Advanced CSharp problems (including OOP):
 1. [Fake Axe and Dummy](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Mocking%20and%20Test%20Driven%20Development/01.%20Fake%20Axe%20and%20Dummy/FakeAxeAndDummy)
 ### Design Patterns
 1. [Prototype Pattern](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Design%20Patterns/01.PrototypеPattern)
-2. [Composite Pattern]()
+2. [Composite Pattern](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Design%20Patterns/02.Composite)
 4. [Template Pattern](https://github.com/Banovvv/SoftUni-CSharp-Advanced/tree/master/OOP/Design%20Patterns/03.TemplatePattern)
     </td>
   </tr>
